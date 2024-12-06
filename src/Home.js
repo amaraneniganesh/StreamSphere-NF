@@ -110,6 +110,23 @@ const movies = [
     cast: { hero: "Mahesh Babu", heroine: "Bhumika chawla", director: "guna shekar" },
     genre: "Romance, Drama, Action",
   },
+  {
+    title: "Pushpa The Rise",
+    poster: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pushpa--the-rise-et00129538-08-12-2021-01-21-46.jpg",
+    hoverPoster: "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20221129125434.jpg",
+    link: "https://drive.google.com/file/d/1RiBaix1rfDTus0oBbMSO91fR-_b65zDA/preview",
+    cast: { hero: "Allu Arjun", heroine: "Rashmika mandanna", director: "Sukumar" },
+    genre: "Drama, Action",
+  },
+  {
+    title: "1 - Nenokadine",
+    poster: "https://m.media-amazon.com/images/S/pv-target-images/8a1a8002b2265386af2572cb69ddcfce7168b596d7ba4650dc016a5bfc0c4898.jpg",
+    hoverPoster: "https://m.media-amazon.com/images/M/MV5BMTY5OTA1OTY4OV5BMl5BanBnXkFtZTgwODA1NzAwMTE@._V1_.jpg",
+    link: "https://drive.google.com/file/d/1iPBokKWE2S-0Ei5w5hlo0E9roF7jc2mS/preview",
+    cast: { hero: "Mahesh Babu", heroine: "kriti sanon", director: "Sukumar" },
+    genre: "Drama, Action, thriller, mystery",
+  },
+  
 ];
 
 const Home = ({ searchTerm }) => {
@@ -146,11 +163,24 @@ const Home = ({ searchTerm }) => {
   };
 
   const sections = [
-    { title: "Mahesh Babu Movies", filter: (movie) => movie.cast.hero === "Mahesh Babu" },
-    { title: "Prabhas Movies", filter: (movie) => movie.cast.hero === "Prabhas" },
-    { title: "Telugu Dubbed / Foreign Movies", filter: (movie) => movie.category === "Telugu Dubbed" },
-    { title: "All Movies", filter: () => true },
+    {
+      title: `Mahesh Babu Movies (${movies.filter((movie) => movie.cast.hero === "Mahesh Babu").length})`,
+      filter: (movie) => movie.cast.hero === "Mahesh Babu",
+    },
+    {
+      title: `Prabhas Movies (${movies.filter((movie) => movie.cast.hero === "Prabhas").length})`,
+      filter: (movie) => movie.cast.hero === "Prabhas",
+    },
+    {
+      title: `Telugu Dubbed / Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
+      filter: (movie) => movie.category === "Telugu Dubbed",
+    },
+    {
+      title: `All Movies (${movies.length})`,
+      filter: () => true,
+    },
   ];
+  
 
   return (
     <div>

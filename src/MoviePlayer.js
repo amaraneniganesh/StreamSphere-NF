@@ -25,9 +25,9 @@ const MoviePlayer = () => {
 
   return (
     <div className={`player-container ${isDarkMode ? "lights-off" : ""}`}>
-      <a onClick={() => navigate("/")} className="back-button">
+      <button onClick={() => navigate("/")} className="back-button">
         Back to Home
-      </a>
+      </button>
       <button onClick={toggleLight} className="light-toggle-btn">
         {isDarkMode ? "Turn On Light" : "Turn Off Light"}
       </button>

@@ -102,6 +102,30 @@ const movies = [
     cast: { hero: "Prabhas", heroine: "Kajal Aggarwal", director: "A. Karunakaran" },
     genre: "Romance, Drama",
   },  
+  {
+    title: "Okkadu",
+    poster: "https://m.media-amazon.com/images/M/MV5BMTFmZTM1ODUtNzU5OC00ZDM0LTg2NGEtZjMyNzRhMDk5M2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    hoverPoster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq9XXGtH_qkesWrfI3pb7TqUUypE9w3OsG453-lTRx49JM-1DBVSvESnDpQVzt0dPQx5RmeKbTGrdsi4M6z62qABAQTf8ESlT8_OmVqPG_5sXViCZxogj7N8HR5EJBs-nRrVs5gSOJuOvV/s1600/mahesh-story_647_011517011356.jpg",
+    link: "https://drive.google.com/file/d/1mc2l93BETSCuNxWal7aucZsBv4Ih7yEb/preview",
+    cast: { hero: "Mahesh Babu", heroine: "Bhumika chawla", director: "guna shekar" },
+    genre: "Romance, Drama, Action",
+  },
+  {
+    title: "Pushpa The Rise",
+    poster: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pushpa--the-rise-et00129538-08-12-2021-01-21-46.jpg",
+    hoverPoster: "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20221129125434.jpg",
+    link: "https://drive.google.com/file/d/1RiBaix1rfDTus0oBbMSO91fR-_b65zDA/preview",
+    cast: { hero: "Allu Arjun", heroine: "Rashmika mandanna", director: "Sukumar" },
+    genre: "Drama, Action",
+  },
+  {
+    title: "1 - Nenokadine",
+    poster: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pushpa--the-rise-et00129538-08-12-2021-01-21-46.jpg",
+    hoverPoster: "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20221129125434.jpg",
+    link: "https://drive.google.com/file/d/1iPBokKWE2S-0Ei5w5hlo0E9roF7jc2mS/preview",
+    cast: { hero: "Mahesh Babu", heroine: "kriti sanon", director: "Sukumar" },
+    genre: "Drama, Action",
+  },
 ];
 
 const SearchResults = ({ searchTerm }) => {
