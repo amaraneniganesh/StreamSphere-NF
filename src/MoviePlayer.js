@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 
@@ -6,6 +6,7 @@ const MoviePlayer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const movie = location.state?.movie;
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   if (!movie) {
     return (
@@ -18,11 +19,18 @@ const MoviePlayer = () => {
     );
   }
 
+  const toggleLight = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="player-container">
+    <div className={`player-container ${isDarkMode ? "lights-off" : ""}`}>
       <a onClick={() => navigate("/")} className="back-button">
         Back to Home
       </a>
+      <button onClick={toggleLight} className="light-toggle-btn">
+        {isDarkMode ? "Turn On Light" : "Turn Off Light"}
+      </button>
       <div className="video-container">
         <h1>Playing: {movie.title}</h1>
         <iframe
