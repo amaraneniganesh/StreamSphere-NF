@@ -102,66 +102,68 @@ const movies = [
     cast: { hero: "Prabhas", heroine: "Kajal Aggarwal", director: "A. Karunakaran" },
     genre: "Romance, Drama",
   },  
-  {
-    title: "Okkadu",
-    poster: "https://m.media-amazon.com/images/M/MV5BMTFmZTM1ODUtNzU5OC00ZDM0LTg2NGEtZjMyNzRhMDk5M2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    hoverPoster: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq9XXGtH_qkesWrfI3pb7TqUUypE9w3OsG453-lTRx49JM-1DBVSvESnDpQVzt0dPQx5RmeKbTGrdsi4M6z62qABAQTf8ESlT8_OmVqPG_5sXViCZxogj7N8HR5EJBs-nRrVs5gSOJuOvV/s1600/mahesh-story_647_011517011356.jpg",
-    link: "https://drive.google.com/file/d/1mc2l93BETSCuNxWal7aucZsBv4Ih7yEb/preview",
-    cast: { hero: "Mahesh Babu", heroine: "Bhumika chawla", director: "guna shekar" },
-    genre: "Romance, Drama, Action",
-  },
 ];
 
-const Home = ({ searchTerm }) => {
-  const navigate = useNavigate();
-
-  const handlePosterClick = (movie) => {
-    navigate(`/movie/${encodeURIComponent(movie.title)}`, {
-      state: { movie },
+const SearchResults = ({ searchTerm }) => {
+    const navigate = useNavigate();
+  
+    const handlePosterClick = (movie) => {
+      navigate(`/movie/${encodeURIComponent(movie.title)}`, {
+        state: { movie },
+      });
+    };
+  
+    const filteredMovies = movies.filter((movie) => {
+      if (!searchTerm) return true; // Show all movies if searchTerm is empty.
+  
+      const term = searchTerm.toLowerCase();
+  
+      // Safely access properties with optional chaining.
+      const titleMatch = movie.title?.toLowerCase().includes(term);
+      const genreMatch = movie.genre?.toLowerCase().includes(term);
+      const heroMatch = movie.cast?.hero?.toLowerCase().includes(term);
+      const heroineMatch = movie.cast?.heroine?.toLowerCase().includes(term);
+      const directorMatch = movie.cast?.director?.toLowerCase().includes(term);
+  
+      return titleMatch || genreMatch || heroMatch || heroineMatch || directorMatch;
     });
-  };
-
-  const renderMovies = (filteredMovies) => {
-    if (filteredMovies.length === 0) {
-      return <p>No movies found in this category.</p>;
-    }
-    return filteredMovies.map((movie) => (
-      <div
-        key={movie.title}
-        className="movie-item"
-        onClick={() => handlePosterClick(movie)}
-      >
-        <div
-          className="hover-image"
-          style={{ backgroundImage: `url(${movie.hoverPoster || movie.poster})` }}
-        ></div>
-        <div className="poster-wrapper">
-          <img src={movie.poster} alt={`${movie.title} Poster`} />
-          <div className="poster-overlay">
-            <p className="poster-title">{movie.title}</p>
-          </div>
+  
+    return (
+      <div>
+        {/* Top Navigation Bar */}
+        <div className="top-bar">
+          <button className="home-button" onClick={() => navigate("/")}>
+            <span className="back-icon">←</span> Home
+          </button>
+        </div>
+  
+        <h2>Search Results</h2>
+        <div className="movie-gallery">
+          {filteredMovies.length > 0 ? (
+            filteredMovies.map((movie) => (
+              <div
+                key={movie.title}
+                className="movie-item"
+                onClick={() => handlePosterClick(movie)}
+              >
+                <div
+                  className="hover-image"
+                  style={{ backgroundImage: `url(${movie.hoverPoster || movie.poster})` }}
+                ></div>
+                <div className="poster-wrapper">
+                  <img src={movie.poster} alt={`${movie.title} Poster`} />
+                  <div className="poster-overlay">
+                    <p className="poster-title">{movie.title}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>No movies found.</p>
+          )}
         </div>
       </div>
-    ));
+    );
   };
-
-  const sections = [
-    { title: "Mahesh Babu Movies", filter: (movie) => movie.cast.hero === "Mahesh Babu" },
-    { title: "Prabhas Movies", filter: (movie) => movie.cast.hero === "Prabhas" },
-    { title: "Telugu Dubbed / Foreign Movies", filter: (movie) => movie.category === "Telugu Dubbed" },
-    { title: "All Movies", filter: () => true },
-  ];
-
-  return (
-    <div>
-      {sections.map((section) => (
-        <div key={section.title}>
-          <h2>{section.title}</h2>
-          <div className="movie-gallery">{renderMovies(movies.filter(section.filter))}</div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default Home;
+  
+  export default SearchResults;
