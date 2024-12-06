@@ -36,8 +36,9 @@ const SearchResults = ({ searchTerm }) => {
     <div>
       {/* Top Navigation Bar */}
       <div className="top-bar">
+        <br/>
         <button className="home-button" onClick={() => navigate("/")}>
-          <span className="back-icon">←</span> Home
+          <span className="back-icon"></span> Home
         </button>
       </div>
 

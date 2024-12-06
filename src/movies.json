@@ -165,5 +165,40 @@
             "director": "Surendar reddy"
         },
         "genre": "Drama, Action"
+    },
+    {
+        "title": "Adhurs",
+        "poster": "https://static.toiimg.com/photo/61297209.cms",
+        "hoverPoster": "https://tejarao.com/wp-content/uploads/2017/02/wp-33adurs1280.jpg",
+        "link": "https://drive.google.com/file/d/1tnttaElZ7eRxd4LB_f2wFcUVO8fs0vQh/preview",
+        "cast": {
+            "hero": "N. T. Rama Rao Jr",
+            "heroine": "Nayanthara",
+            "director": "V. V. Vinayak"
+        },
+        "genre": "Comedy, Action"
+    },
+    {
+        "title": "BusinessMan",
+        "poster": "https://movie.webindia123.com/movie/2011/Regional/December/Businessman/poster/Businessman14.jpg",
+        "hoverPoster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00008299-kqscaqtasv-landscape.jpg",
+        "link": "https://drive.google.com/file/d/1HL3Sker9CdkaO7Cx2a18uCu5eq79LWj6/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "Kajal Aggarwal",
+            "director": "Puri Jagannadh"
+        },
+        "genre": "Crime, Action"
+    },{
+        "title": "RRR",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "hoverPoster": "https://images.hindustantimes.com/img/2022/04/01/1600x900/RRR-Movie-Review_1648825470847_1648825479894.jpg",
+        "link": "https://drive.google.com/file/d/13WxWpJHLFWixI-Gjbk5Fl1H11KVobcMe/preview",
+        "cast": {
+            "hero": "NTR, Ram Charan",
+            "heroine": "Olivia Morris, alia bhatt ",
+            "director": "SS Rajamouli"
+        },
+        "genre": "Crime, Action"
     }
 ]

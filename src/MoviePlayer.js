@@ -7,6 +7,7 @@ const MoviePlayer = () => {
   const navigate = useNavigate();
   const movie = location.state?.movie;
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isPartyMode, setIsPartyMode] = useState(false);
 
   if (!movie) {
     return (
@@ -23,18 +24,26 @@ const MoviePlayer = () => {
     setIsDarkMode(!isDarkMode);
   };
 
+  const togglePartyMode = () => {
+    setIsPartyMode(!isPartyMode);
+  };
+
   return (
     <div className={`player-container ${isDarkMode ? "lights-off" : ""}`}>
       <button onClick={() => navigate("/")} className="back-button">
         Back to Home
       </button>
-      <button onClick={toggleLight} className="light-toggle-btn">
+      <button onClick={toggleLight} className="button-62">
         {isDarkMode ? "Turn On Light" : "Turn Off Light"}
       </button>
-      <div className="video-container">
+      <button onClick={togglePartyMode} className="party-btn">
+        Party Mode
+      </button>
+      
         <h1>{movie.title.toUpperCase()}</h1>
         <h1>{movie.cast.hero} || {movie.cast.heroine} || {movie.cast.director}</h1>
-        <iframe
+        <div className={`video-container ${isPartyMode ? "party-effect" : ""}`}>
+        <iframe 
           src={movie.link}
           width="800"
           height="450"
