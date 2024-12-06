@@ -6,7 +6,7 @@ const MoviePlayer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const movie = location.state?.movie;
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   if (!movie) {
     return (
@@ -32,7 +32,8 @@ const MoviePlayer = () => {
         {isDarkMode ? "Turn On Light" : "Turn Off Light"}
       </button>
       <div className="video-container">
-        <h1>Playing: {movie.title}</h1>
+        <h1>{movie.title.toUpperCase()}</h1>
+        <h1>{movie.cast.hero} || {movie.cast.heroine} || {movie.cast.director}</h1>
         <iframe
           src={movie.link}
           width="800"

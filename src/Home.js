@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
-import movies from "./movies.json";  // Import the movie data from the JSON file
+import movies from "./movies.json";
 
 const Home = ({ searchTerm }) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Set dark mode by default
+    document.body.classList.add('dark-mode');
+  }, []);
 
   const handlePosterClick = (movie) => {
     navigate(`/movie/${encodeURIComponent(movie.title)}`, {
