@@ -189,16 +189,58 @@
             "director": "Puri Jagannadh"
         },
         "genre": "Crime, Action"
-    },{
+    },
+    {
         "title": "RRR",
         "poster": "https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "hoverPoster": "https://images.hindustantimes.com/img/2022/04/01/1600x900/RRR-Movie-Review_1648825470847_1648825479894.jpg",
-        "link": "https://drive.google.com/file/d/13WxWpJHLFWixI-Gjbk5Fl1H11KVobcMe/preview",
+        "link": "https://drive.google.com/file/d/1M7w6R-5nm5IBSdm6R1D4itXc-J3pXFXp/preview",
         "cast": {
             "hero": "NTR, Ram Charan",
             "heroine": "Olivia Morris, alia bhatt ",
             "director": "SS Rajamouli"
         },
         "genre": "Crime, Action"
+    },
+    {
+        "title": "Sarkaru vari paata",
+        "poster": "https://img.studioflicks.com/wp-content/uploads/2022/03/09010837/Sarkaru-Vaari-Paata-Release-Date-Poster-3.jpg",
+        "hoverPoster": "https://t2blive.com/wp-content/uploads/2022/06/FSsTvtxakAA8piD-e1654940555514.jpg",
+        "link": "https://drive.google.com/file/d/1fri5F9YG865ZzxSINX0FZvSJAaC-__vK/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "Keerthy suresh",
+            "director": "parasuram petla"
+        },
+        "genre": "Comedy, Action"
+    },
+    {
+        "title": "Bahubali The Beginning",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg",
+        "hoverPoster": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2024/07/baahubali-1720612358.jpg",
+        "link": "https://drive.google.com/file/d/17mPAeiYEAQY9hGQC28pvjiDjjFN9dRIw/preview",
+        "cast": {"hero": "Prabhas", "heroine": "Anushka", "director": "SS Rajamouli" },
+        "genre": "periodic drama"
+      },
+      
+      {
+        "title": "Brindavanam",
+        "poster": "https://m.media-amazon.com/images/S/pv-target-images/785dfbfdbcbd37306af753a7b128f7581e9e8f685b826418902f86595625a206.jpg",
+        "hoverPoster": "https://m.media-amazon.com/images/S/pv-target-images/033d89b3ed1e83c6acf7d972c8af38cb6e84b2a0622a76cbd716acf54dd377bd.jpg",
+        "link": "https://drive.google.com/file/d/1tUTMvgeBAmIxenTFCFw2KknWwcdWQ-2M/preview",
+        "cast": {"hero": "Jr Ntr", "heroine": "Kajal, Samantha", "director": "Vamshi paidipally" },
+        "genre": "periodic drama"
+      },
+      {
+        "title": "spyder",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZGQyMjU2NWEtMDJiMS00MzkxLTg4YjAtNDRkY2NkNjUyZjMxXkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://images.indianexpress.com/2017/09/spyder-review-mahesh-babu-759.jpg",
+        "link": "https://drive.google.com/file/d/1rgq4t5Eu0YMvyh-HZccB62W7KTJ8KwGK/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "Rakul preetsingh",
+            "director": "Murgadas"
+        },
+        "genre": "Drama, Action, Thriller, Mystery"
     }
 ]
