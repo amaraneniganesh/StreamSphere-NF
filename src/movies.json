@@ -255,5 +255,29 @@
             "director": "Murgadas"
         },
         "genre": "Drama, Action, Thriller, Mystery"
+    },
+    {
+        "title": "Ala Vaikuntapuram lo",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/2/28/Ala_Vaikunthapurramuloo.jpeg",
+        "hoverPoster": "https://wallpapers.com/images/hd/ala-vaikunthapurramuloo-bantu-dance-poses-qk0j51dvt4v709dd.jpg",
+        "link": "https://drive.google.com/file/d/1Jl0p3dy-AN-GA9OtzdJSZmAm3FdzJHwB/preview",
+        "cast": {
+            "hero": "Allu Arjun",
+            "heroine": "Pooja Hegde",
+            "director": "Trivikram"
+        },
+        "genre": "Drama"
+    },
+    {
+        "title": "Kanguva",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTEyMzJkZjUtM2ZiOS00NzQ1LTgzZjYtYmJiMTg3ZGNlMzc0XkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://images.filmibeat.com/img/2024/12/kanguva1-1733107148.jpg",
+        "link": "https://drive.google.com/file/d/1WNE3juiaSkFLmG9gDhe1fScxCVvGyd6n/preview",
+        "cast": {
+            "hero": "Suriya",
+            "heroine": "Disha patani",
+            "director": "Siva"
+        },
+        "genre": "Action, Fantasy"
     }
 ]
