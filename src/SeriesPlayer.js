@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./App.css";
+import "./SeriesPlayer.css";
 
 const SeriesPlayer = () => {
   const location = useLocation();
@@ -9,6 +9,7 @@ const SeriesPlayer = () => {
 
   const [selectedSeason, setSelectedSeason] = useState(series?.seasons[0]);
   const [selectedEpisode, setSelectedEpisode] = useState(selectedSeason?.episodes[0]);
+  const [partyMode, setPartyMode] = useState(false); // State to toggle the animation
 
   if (!series) return <h1>Series not found! Please go back and try again.</h1>;
 
@@ -19,11 +20,20 @@ const SeriesPlayer = () => {
 
   const handleEpisodeSelect = (episode) => setSelectedEpisode(episode);
 
+  const handlePartyButtonClick = () => {
+    setPartyMode((prevMode) => !prevMode); // Toggle party mode
+  };
+
   return (
     <div className="series-container">
       <button onClick={() => navigate("/")} className="back-button">
         Back to Home
       </button>
+
+      {/* Party Button */}
+      <div className="party-button1" onClick={handlePartyButtonClick}>
+        Party!
+      </div>
 
       {/* Centered Series Title */}
       <div className="series-header">
@@ -76,7 +86,7 @@ const SeriesPlayer = () => {
       </div>
 
       {/* Video Player */}
-      <div className="video-container">
+      <div className={`video-container1 ${partyMode ? "party-mode" : ""}`}>
         {selectedEpisode ? (
           <iframe
             src={selectedEpisode.link}
