@@ -1,42 +1,40 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import moviesData from './movies.json'; // Assuming movies.json is in the src directory
+import moviesData from './movies.json';
+import seriesData from './Series.json';
 import "./App.css";
 
 const SearchResults = ({ searchTerm }) => {
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]);
+  const [series, setSeries] = useState([]);
 
   useEffect(() => {
-    setMovies(moviesData); // Load the movies data when the component mounts
+    setMovies(moviesData);
+    setSeries(seriesData);
   }, []);
 
-  const handlePosterClick = (movie) => {
-    navigate(`/movie/${encodeURIComponent(movie.title)}`, {
-      state: { movie },
-    });
+  const handlePosterClick = (item, type) => {
+    if (type === "movie") {
+      navigate(`/movie/${encodeURIComponent(item.title)}`, { state: { movie: item } });
+    } else {
+      navigate(`/series/${encodeURIComponent(item.title)}`, { state: { serie: item } });
+    }
   };
 
-  const filteredMovies = movies.filter((movie) => {
-    if (!searchTerm) return true; // Show all movies if searchTerm is empty.
-
-    const term = searchTerm.toLowerCase();
-
-    // Safely access properties with optional chaining.
-    const titleMatch = movie.title?.toLowerCase().includes(term);
-    const genreMatch = movie.genre?.toLowerCase().includes(term);
-    const heroMatch = movie.cast?.hero?.toLowerCase().includes(term);
-    const heroineMatch = movie.cast?.heroine?.toLowerCase().includes(term);
-    const directorMatch = movie.cast?.director?.toLowerCase().includes(term);
-
-    return titleMatch || genreMatch || heroMatch || heroineMatch || directorMatch;
-  });
+  const filteredResults = [
+    ...movies.filter((movie) =>
+      searchTerm ? movie.title?.toLowerCase().includes(searchTerm.toLowerCase()) : true
+    ),
+    ...series.filter((serie) =>
+      searchTerm ? serie.title?.toLowerCase().includes(searchTerm.toLowerCase()) : true
+    ),
+  ];
 
   return (
     <div>
-      {/* Top Navigation Bar */}
       <div className="top-bar">
-        <br/>
+        <br />
         <button className="home-button" onClick={() => navigate("/")}>
           <span className="back-icon"></span> Home
         </button>
@@ -44,27 +42,27 @@ const SearchResults = ({ searchTerm }) => {
 
       <h2>Search Results</h2>
       <div className="movie-gallery">
-        {filteredMovies.length > 0 ? (
-          filteredMovies.map((movie) => (
+        {filteredResults.length > 0 ? (
+          filteredResults.map((item) => (
             <div
-              key={movie.title}
+              key={item.title}
               className="movie-item"
-              onClick={() => handlePosterClick(movie)}
+              onClick={() => handlePosterClick(item, item.seasons ? "series" : "movie")}
             >
               <div
                 className="hover-image"
-                style={{ backgroundImage: `url(${movie.hoverPoster || movie.poster})` }}
+                style={{ backgroundImage: `url(${item.hoverPoster || item.poster})` }}
               ></div>
               <div className="poster-wrapper">
-                <img src={movie.poster} alt={`${movie.title} Poster`} />
+                <img src={item.poster} alt={`${item.title} Poster`} />
                 <div className="poster-overlay">
-                  <p className="poster-title">{movie.title}</p>
+                  <p className="poster-title">{item.title}</p>
                 </div>
               </div>
             </div>
           ))
         ) : (
-          <p>No movies found.</p>
+          <p>No results found.</p>
         )}
       </div>
     </div>

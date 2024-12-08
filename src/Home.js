@@ -1,73 +1,98 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 import movies from "./movies.json";
+import series from "./Series.json";
 
-const Home = ({ searchTerm }) => {
+const Home = () => {
   const navigate = useNavigate();
+  const [seriesData, setSeriesData] = useState([]);
 
   useEffect(() => {
-    // Set dark mode by default
     document.body.classList.add('dark-mode');
+    setSeriesData(series);
   }, []);
 
-  const handlePosterClick = (movie) => {
-    navigate(`/movie/${encodeURIComponent(movie.title)}`, {
-      state: { movie },
-    });
+  const handlePosterClick = (item, type) => {
+    if (type === "movie") {
+      navigate(`/movie/${encodeURIComponent(item.title)}`, { state: { movie: item } });
+    } else if (type === "series") {
+      navigate(`/series/${encodeURIComponent(item.title)}`, { state: { serie: item } });
+    }
   };
 
-  const renderMovies = (filteredMovies) => {
-    if (filteredMovies.length === 0) {
-      return <p>No movies found in this category.</p>;
+  const renderItems = (items, type) => {
+    if (items.length === 0) {
+      return <p>No {type} found in this category.</p>;
     }
-    return filteredMovies.map((movie) => (
+    return items.map((item) => (
       <div
-        key={movie.title}
+        key={item.title}
         className="movie-item"
-        onClick={() => handlePosterClick(movie)}
+        onClick={() => handlePosterClick(item, item.seasons ? "series" : "movie")}
       >
         <div
           className="hover-image"
-          style={{ backgroundImage: `url(${movie.hoverPoster || movie.poster})` }}
+          style={{ backgroundImage: `url(${item.hoverPoster || item.poster})` }}
         ></div>
         <div className="poster-wrapper">
-          <img src={movie.poster} alt={`${movie.title} Poster`} />
+          <img src={item.poster} alt={`${item.title} Poster`} />
           <div className="poster-overlay">
-            <p className="poster-title">{movie.title}</p>
+            <p className="poster-title">{item.title}</p>
           </div>
         </div>
       </div>
     ));
   };
 
-  const sections = [
+  const movieSections = [
     {
       title: `Mahesh Babu Movies (${movies.filter((movie) => movie.cast.hero === "Mahesh Babu").length})`,
-      filter: (movie) => movie.cast.hero === "Mahesh Babu",
+      items: movies.filter((movie) => movie.cast.hero === "Mahesh Babu"),
+      type: "movie",
     },
     {
       title: `Prabhas Movies (${movies.filter((movie) => movie.cast.hero === "Prabhas").length})`,
-      filter: (movie) => movie.cast.hero === "Prabhas",
+      items: movies.filter((movie) => movie.cast.hero === "Prabhas"),
+      type: "movie",
     },
     {
       title: `Telugu Dubbed / Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
-      filter: (movie) => movie.category === "Telugu Dubbed",
+      items: movies.filter((movie) => movie.category === "Telugu Dubbed"),
+      type: "movie",
     },
     {
       title: `All Movies (${movies.length})`,
-      filter: () => true,
+      items: movies,
+      type: "movie",
     },
   ];
 
+  const seriesSection = {
+    title: `Series (${seriesData.length})`,
+    items: seriesData,
+    type: "series",
+  };
+
   return (
     <div>
-      {sections.map((section) => (
+      {movieSections.map((section) => (
         <div key={section.title}>
           <h2>{section.title}</h2>
-          <div className="movie-gallery">{renderMovies(movies.filter(section.filter))}</div>
+          <div className="movie-gallery">{renderItems(section.items, section.type)}</div>
         </div>
       ))}
+
+      <div key={seriesSection.title}>
+        <h2>{seriesSection.title}</h2>
+        <div className="movie-gallery">
+          {seriesSection.items.length === 0 ? (
+            <p>No Series found in this category.</p>
+          ) : (
+            renderItems(seriesSection.items, "series")
+          )}
+        </div>
+      </div>
     </div>
   );
 };

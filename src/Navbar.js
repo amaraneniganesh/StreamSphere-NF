@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from './WhatsApp_Image_2024-12-05_at_22.45.51_bc5a497b-removebg-preview.png'; // Importing the image
+import logo from './WhatsApp_Image_2024-12-05_at_22.45.51_bc5a497b-removebg-preview.png';
 import "./App.css";
 
 const Navbar = ({ onSearch }) => {
@@ -10,8 +10,8 @@ const Navbar = ({ onSearch }) => {
   const handleSearchChange = (e) => {
     const term = e.target.value;
     setSearchTerm(term);
-    onSearch(term); // Pass the search term to the parent component
-    navigate("/search"); // Navigate to the search results page
+    onSearch(term);
+    navigate("/search");
   };
 
   return (
@@ -24,7 +24,7 @@ const Navbar = ({ onSearch }) => {
       <div className="navbar-search">
         <input
           type="text"
-          placeholder="Search for a movie..."
+          placeholder="Search for a movie or series..."
           value={searchTerm}
           onChange={handleSearchChange}
         />
