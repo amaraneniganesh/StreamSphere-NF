@@ -318,3 +318,52 @@ body {
 .button-62:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
+/* Dropdown container */
+.dropdown-container {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+/* Label for dropdowns */
+.dropdown-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff; /* Change to match your design theme */
+}
+
+/* Dropdown select box */
+.dropdown-select {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c1c2c5;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-select:hover {
+  border-color: #007bff;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* App.css */
+.series-container {
+  /* flex-direction: column; */
+  text-align: center;
+}
+
+.series-header {
+  margin-bottom: 20px;
+}
+

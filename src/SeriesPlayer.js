@@ -14,7 +14,7 @@ const SeriesPlayer = () => {
 
   const handleSeasonSelect = (season) => {
     setSelectedSeason(season);
-    setSelectedEpisode(season.episodes[0]);
+    setSelectedEpisode(season.episodes[0]); // Reset to the first episode of the selected season
   };
 
   const handleEpisodeSelect = (episode) => setSelectedEpisode(episode);
@@ -24,23 +24,58 @@ const SeriesPlayer = () => {
       <button onClick={() => navigate("/")} className="back-button">
         Back to Home
       </button>
-      <h1>{series.title}</h1>
-      <div className="season-list">
-        {series.seasons.map((season) => (
-          <div key={season.season}>
-            <h2 onClick={() => handleSeasonSelect(season)}>Season {season.season}</h2>
-            {selectedSeason?.season === season.season && (
-              <ul>
-                {season.episodes.map((episode) => (
-                  <li key={episode.episode} onClick={() => handleEpisodeSelect(episode)}>
-                    Episode {episode.episode}: {episode.title}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+
+      {/* Centered Series Title */}
+      <div className="series-header">
+        <h1>{series.title}</h1>
+        <h2>{selectedEpisode ? `Episode ${selectedEpisode.episode}: ${selectedEpisode.title}` : ""}</h2>
       </div>
+
+      {/* Dropdown for seasons */}
+      <div className="dropdown-container">
+        <label htmlFor="season-select" className="dropdown-label">
+          Select Season:
+        </label>
+        <select
+          id="season-select"
+          className="dropdown-select"
+          value={selectedSeason?.season}
+          onChange={(e) =>
+            handleSeasonSelect(series.seasons.find((s) => s.season === parseInt(e.target.value)))
+          }
+        >
+          {series.seasons.map((season) => (
+            <option key={season.season} value={season.season}>
+              Season {season.season}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Dropdown for episodes */}
+      <div className="dropdown-container">
+        <label htmlFor="episode-select" className="dropdown-label">
+          Select Episode:
+        </label>
+        <select
+          id="episode-select"
+          className="dropdown-select"
+          value={selectedEpisode?.episode}
+          onChange={(e) =>
+            handleEpisodeSelect(
+              selectedSeason.episodes.find((ep) => ep.episode === parseInt(e.target.value))
+            )
+          }
+        >
+          {selectedSeason.episodes.map((episode) => (
+            <option key={episode.episode} value={episode.episode}>
+              Episode {episode.episode}: {episode.title}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Video Player */}
       <div className="video-container">
         {selectedEpisode ? (
           <iframe
