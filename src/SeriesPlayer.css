@@ -82,6 +82,7 @@
     transition: all 250ms;
     overflow: hidden;
     z-index: 2; /* Ensure it's on top of other content */
+    
   }
   
   .party-button1::before {
@@ -96,6 +97,7 @@
     z-index: -1;
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
+    cursor: pointer;
   }
   
   .party-button1:hover {
