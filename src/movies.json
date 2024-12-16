@@ -305,6 +305,18 @@
         "genre": "Comedy,Adventure"
     },
     {
+        "title": "Rangasthalam",
+        "poster": "https://static.toiimg.com/photo/msid-63543810/63543810.jpg",
+        "hoverPoster": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/03/29/Pictures/_a64d53e2-3368-11e8-9916-7e63ef9446cf.jpg",
+        "link": "https://drive.google.com/file/d/1w0M2khdJiTaNJ7amLqpVHKlJFl4LDzph/preview",
+        "cast": {
+            "hero": "Ram Charan",
+            "heroine": "Samantha",
+            "director": "Sukumar"
+        },
+        "genre": "Action,Family"
+    },
+    {
         "title": "Nuvvu Naaku Nachav",
         "poster": "https://cps-static.rovicorp.com/1/adg/cov584/dru200/u290/u29011in7c5.jpg",
         "hoverPoster": "https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2829/552829-h",
