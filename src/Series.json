@@ -17,6 +17,22 @@
           ]
         }
       ]
+    },
+    {
+      "title": "The Rana Daggubati Show",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjhjM2RlOTUtZGYxMi00Y2FhLTllNDYtN2Q4YjMwMzM4OWI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "hoverPoster": "https://images.firstpost.com/uploads/2024/11/MixCollage-15-Nov-2024-01-09-PM-1589-2024-11-62f85a273e140cd258f75d77529e43e0.jpg?im=FitAndFill=(596,336)",
+      "seasons": [
+        {
+          "season": 1,
+          "episodes": [
+            { "episode": 1, "title": "Normal Is Boring", "link": "https://drive.google.com/file/d/1gwavMMxSke5tfq1s0G5jqzTF8JJprkkK/preview" },
+            { "episode": 2, "title": "And Just Like That", "link": "https://drive.google.com/file/d/1FKJOlbOOLZWfNUXmYL3VJ0TNn2WgvXUo/preview" },
+            { "episode": 3, "title": "Cousins, Cars and Cinema", "link": "https://drive.google.com/file/d/1ckxHfftQ1WQUPIrUczb-omf8mPK6QYe6/preview" },
+            { "episode": 4, "title": "Master Influencers", "link": "https://drive.google.com/file/d/1bHK_FH7oUUdEtwcZBpHP_Egfv2HfK8Sk/preview" }
+          ]
+        }
+      ]
     }
   ]
   
