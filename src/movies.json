@@ -317,6 +317,30 @@
         "genre": "Action,Family"
     },
     {
+        "title": "Thangalaan",
+        "poster": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26983270_p_v13_aa.jpg",
+        "hoverPoster": "https://imagesvs.oneindia.com/img/2024/08/thangalaan-review-01-1723662276.jpg",
+        "link": "https://drive.google.com/file/d/1RmrHGmUQzxbRDMQVa1jkHMXfasiGY5Je/preview",
+        "cast": {
+            "hero": "Vikram",
+            "heroine": "Parvathy Thiruvothu",
+            "director": "Pa. Ranjith"
+        },
+        "genre": "Action,Adventure"
+    },
+    {
+        "title": "Sarrainodu",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Sarrainodu_poster.jpg/220px-Sarrainodu_poster.jpg",
+        "hoverPoster": "https://assets.thehansindia.com/hansindia-bucket/6772_sarainodu.jpg",
+        "link": "https://drive.google.com/file/d/16h-Q_RzFfN0a_9fy8bDIifO8Nf3_7pw7/preview",
+        "cast": {
+            "hero": "Allu Arjun",
+            "heroine": "Rakul Preet Singh,Catherine Tresa",
+            "director": "Boyapati Srinu"
+        },
+        "genre": "Action,Comedy"
+    },
+    {
         "title": "Nuvvu Naaku Nachav",
         "poster": "https://cps-static.rovicorp.com/1/adg/cov584/dru200/u290/u29011in7c5.jpg",
         "hoverPoster": "https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2829/552829-h",
