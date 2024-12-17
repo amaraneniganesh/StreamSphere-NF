@@ -23,7 +23,7 @@ const Home = () => {
 
   const renderItems = (items, type) => {
     if (items.length === 0) {
-      return <p>No {type} found in this category.</p>;
+      return <p>No {type} found in this category!</p>;
     }
     return items.map((item) => (
       <div
