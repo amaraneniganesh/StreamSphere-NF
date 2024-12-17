@@ -376,5 +376,18 @@
             "director": "Trivikram"
         },
         "genre": "Comedy, Action"
+    },
+     
+    {
+        "title": "Surya S/o Krishnan",
+        "poster": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/surya-s-o-krishnan-et00002203-1689661215.jpg",
+        "hoverPoster": "https://www.newstap.in/h-upload/2023/07/18/1522261-surya.jpg",
+        "link": " https://drive.google.com/file/d/10A6uDO1xwP0vaf2kTbGeIDuPlhCB-Ypc/preview",
+        "cast": {
+            "hero": "Suriya",
+            "heroine": "Sameera Reddy",
+            "director": "Gautam menon"
+        },
+        "genre": "Love, Romance"
     }
 ]

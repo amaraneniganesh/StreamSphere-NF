@@ -46,26 +46,23 @@ const Home = () => {
   };
 
   const movieSections = [
+    
     {
       title: `Mahesh Babu Movies (${movies.filter((movie) => movie.cast.hero === "Mahesh Babu").length})`,
       items: movies.filter((movie) => movie.cast.hero === "Mahesh Babu"),
       type: "movie",
     },
     {
-      title: `Prabhas Movies (${movies.filter((movie) => movie.cast.hero === "Prabhas").length})`,
-      items: movies.filter((movie) => movie.cast.hero === "Prabhas"),
-      type: "movie",
-    },
-    {
       title: `Telugu Dubbed / Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
       items: movies.filter((movie) => movie.category === "Telugu Dubbed"),
       type: "movie",
-    },
+    }, 
     {
       title: `All Movies (${movies.length})`,
       items: movies,
       type: "movie",
     },
+    
   ];
 
   const seriesSection = {
