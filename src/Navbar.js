@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from './WhatsApp_Image_2024-12-05_at_22.45.51_bc5a497b-removebg-preview.png';
+import logo from './logo2.png';
 import "./App.css";
 
 const Navbar = ({ onSearch }) => {
