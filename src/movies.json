@@ -351,5 +351,30 @@
             "director": "K. Vijaya Bhaskar"
         },
         "genre": "Comedy,Family"
+    },
+    {
+        "title": "Dookudu",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmQ3OWVjNTAtOWRhNC00ODc5LWExZjgtN2U4MDgzNmFhMjdiXkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://m.media-amazon.com/images/M/MV5BZWQ2ZGQzZDgtZWQ4MC00N2RhLWE3YjEtMjRjMjE2OWE3N2QyXkEyXkFqcGc@._V1_.jpg",
+        "link": "https://drive.google.com/file/d/1rT_e1NIO5Wz6pLN0rTqNXsVslj1AYv3b/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "Samantha",
+            "director": "Sreenu Vaitla"
+        },
+        "genre": "Comedy, Action"
+    },
+    
+    {
+        "title": "Julayi",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmZjZTdlODctOWJiMy00N2NlLTg4Y2YtOWYxNDZmMDZjYTg4XkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://i.ytimg.com/vi/YzmjCwPiLbk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZ73aicpblWVC4E0xcQtQWDMaWHA",
+        "link": "https://drive.google.com/file/d/104xFd2yVddlNOXFbNLLoyuPdE_0d7KIE/preview",
+        "cast": {
+            "hero": "Allu Arjun",
+            "heroine": "Iliana",
+            "director": "Trivikram"
+        },
+        "genre": "Comedy, Action"
     }
 ]
