@@ -88,7 +88,7 @@
         "title": "The Dark Knight",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
         "hoverPoster": "https://rukminim2.flixcart.com/image/850/1000/kzzw5u80/poster/o/r/b/medium-joker-the-dark-knight-movie-on-fine-art-paper-hd-quality-original-imagbvmycjvpv5ph.jpeg?q=90&crop=false",
-        "link": "https://drive.google.com/file/d/1WiwihlsOsDtO3thYtZlunezbUKpX7LwA/preview",
+        "link": "https://iplayerhls.com/e/tmuvf2towdaw",
         "cast": { "hero": "Christian Bale", "heroine": "Maggie Gyllenhaal", "director": "Christopher Nolan" },
         "genre": "Action/Thriller",
         "category": "Telugu Dubbed"
@@ -389,5 +389,31 @@
             "director": "Gautam menon"
         },
         "genre": "Love, Romance"
-    }
+    },
+    {
+        "title": "raghuvaran btech",
+        "poster": "https://survi.in/wp-content/uploads/2015/01/Raghuvaran-B-Tech-Movie-Review-Rating.jpg",
+        "hoverPoster": "https://connectmyindia.com/posts/images/2024/The-movie-Raghuvaran-Btech.jpg",
+        "link": "https://iplayerhls.com/e/yiu0xiuh5gel",
+        "cast": {
+            "hero": "Dhanush",
+            "heroine": "Amala Paul",
+            "director": "R. Velraj"
+        },
+        "genre": "Action,Comedy"
+    },  
+    {
+        "title": "Sarileru Neekevvaru",
+        "poster": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/sarileru-neekevvaru-et00103955-20-10-2020-06-08-06.jpg",
+        "hoverPoster": "https://static.toiimg.com/photo/71480103.jpeg",
+        "link": "https://drive.google.com/file/d/1aU2XC08XEiICS7KHxAy79oq47eYEYwy3/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "Rashmika Mandanna",
+            "director": "Anil Ravipudi"
+        },
+        "genre": "Comedy, Action"
+    },
+    
+    
 ]
