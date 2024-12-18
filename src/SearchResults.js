@@ -23,12 +23,24 @@ const SearchResults = ({ searchTerm }) => {
   };
 
   const filteredResults = [
-    ...movies.filter((movie) =>
-      searchTerm ? movie.title?.toLowerCase().includes(searchTerm.toLowerCase()) : true
-    ),
-    ...series.filter((serie) =>
-      searchTerm ? serie.title?.toLowerCase().includes(searchTerm.toLowerCase()) : true
-    ),
+    ...movies.filter((movie) => {
+      return (
+        (searchTerm
+          ? (movie.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              (movie.cast?.hero?.toLowerCase().includes(searchTerm.toLowerCase()) || // added null check for `movie.cast`
+              movie.genre?.toLowerCase().includes(searchTerm.toLowerCase())))
+          : true)
+      );
+    }),
+    ...series.filter((serie) => {
+      return (
+        (searchTerm
+          ? (serie.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              (serie.cast?.hero?.toLowerCase().includes(searchTerm.toLowerCase()) || // added null check for `serie.cast`
+              serie.genre?.toLowerCase().includes(searchTerm.toLowerCase())))
+          : true)
+      );
+    }),
   ];
 
   return (
