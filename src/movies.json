@@ -535,6 +535,30 @@
             "director": "Shouryuv"
         },
         "genre": "Drama, Romance"
+    },
+    {
+        "title": "Magadheera",
+        "poster": "https://static.toiimg.com/photo/61318577.cms",
+        "hoverPoster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE_CYNP5AnHErUjVlderSWyV6De56jal4trKu6pMqukMzbEfUM4h5T0Ev08lJASV76QmS3DT-N9zQl6BaL0YYQFvwtE7wanaU35BHu5RM_7HkV1jPnw_bZu1RY-UiqaVogGRFMe_SRiZ2B/s1600/Magadheera-Latest-Wallpapers-5.jpg",
+        "link": "https://drive.google.com/file/d/1wCXnUv0bZLS4w84oBOOQkyboz2CxwbVj/preview",
+        "cast": {
+            "hero": "Ram Charan",
+            "heroine": "Kajal Aggarwal",
+            "director": "S. S. Rajamouli"
+        },
+        "genre": "Fantasy  , Action"
+    },
+    {
+        "title": "Zebra",
+        "poster": "https://pics.filmaffinity.com/Zebra-963549344-mmed.jpg",
+        "hoverPoster": "https://www.tv5news.in/h-upload/2024/09/17/1359608-.webp",
+        "link": "https://drive.google.com/file/d/1gzHDdhW7ZNHKVZmo5Z13mQ_K9GXNGx94/view?usp=sharing",
+        "cast": {
+            "hero": "Satyadev",
+            "heroine": "",
+            "director": "Eashvar Karthic"
+        },
+        "genre": " Thriller,Drama"
     }
     
 ]
