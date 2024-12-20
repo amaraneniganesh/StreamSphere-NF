@@ -595,6 +595,18 @@
             "director": "V. V. Vinayak"
         },
         "genre": "Drama, Action"
+    },
+    {
+        "title": "Srimanthudu",
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2RiZmQ0ZDItY2YzNi00YThjLTgyYjQtNDM2ZDYzNTJmZWI2XkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://boxofficecollection.in/wp-content/uploads/2015/08/srimanthudu-telugu-movie-poster-1.jpg",
+        "link": "https://drive.google.com/file/d/1729SyeYZujofbftev23NYEVsn5cSTXLZ/preview",
+        "cast": {
+            "hero": "Mahesh Babu",
+            "heroine": "sruthi Haasan",
+            "director": "koratala siva"
+        },
+        "genre": "Drama, Action"
     }
     
 ]
