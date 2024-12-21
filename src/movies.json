@@ -36,7 +36,7 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BMWJiZDVkODktZDM2ZS00NzE4LTlhOTEtYzRkYmYyODY4ZmQ2XkEyXkFqcGc@._V1_.jpg",
         "hoverPoster": "https://m.media-amazon.com/images/S/pv-target-images/d768148fc8d705135df70d1288031d34cdee462811f955d135f1749579c0a513._SX1080_FMjpg_.jpg",
         "link": "https://drive.google.com/file/d/1wV8tvJv3F_ryZ9ALERzWGbL9DXLFb5-i/preview",
-        "cast": { "hero": "Mahesh Babu", "heroine": "Samantha, Anjali", "director": "Sreekanth Addala" },
+        "cast": { "hero": "Mahesh Babu", "heroine": "Samantha, Anjali", "director": "Venkatesh || Sreekanth Addala" },
         "genre": "Drama"
       },
       {
@@ -119,6 +119,20 @@
         "genre": "Action, Fantasy, Thriller",
         "category": "Telugu Dubbed"
     },
+    {
+        "title": "The Lion King",
+        "poster": "https://m.media-amazon.com/images/S/pv-target-images/2c6bf6218aa296881bfba2aa6838a21a8bf768d844ad4522fe9931cdcb7a9f33.jpg",
+        "hoverPoster": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6E3379DBFDA41CF305BFD7FE6D14FDB5F901F0CDC9B27C66D7E6FBEA2864B4F2/scale?width=1200&aspectRatio=1.78&format=webp",
+        "link": "https://drive.google.com/file/d/1ofqAw8ztPGZ3jMws9MxBsWMA3rxMpRJh/preview",
+        "cast": {
+            "hero": "Nani ",
+            "heroine": "",
+            "director": "Jon Favreau"
+        },
+        "genre": "Family, Adventure",
+        "category": "Telugu Dubbed"
+    },
+
     {
         "title": "Darling",
         "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Darling_%282010%29_poster.jpg/220px-Darling_%282010%29_poster.jpg",
@@ -419,6 +433,19 @@
         "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_FMjpg_UX1000_.jpg",
         "hoverPoster": "https://c4.wallpaperflare.com/wallpaper/559/80/29/movie-avengers-infinity-war-black-widow-captain-america-wallpaper-preview.jpg",
         "link": "https://drive.google.com/file/d/1teDNYB71upXoQJgP0LdAMHYGAH-UYn-V/preview",
+        "cast": {
+            "hero": "Robert Downey Jr, Chris Hemsworth",
+            "heroine": "Scarlett Johnson",
+            "director": "Anthony Russo, Joe Russo"
+        },
+        "genre": "Action, Sci-fi",
+        "category": "Telugu Dubbed"
+    },
+    {
+        "title": "Avengers: Endgame",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg",
+        "hoverPoster": "https://www.beerita.id/wp-content/uploads/2019/04/endgame-movieposterhd.com_.jpg",
+        "link": "https://drive.google.com/file/d/1dJADuTUrWF5XVNplqvAK1pLhnKdUGf3W/preview",
         "cast": {
             "hero": "Robert Downey Jr, Chris Hemsworth",
             "heroine": "Scarlett Johnson",
