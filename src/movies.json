@@ -683,6 +683,18 @@
         "genre": "Drama, Thriller, Mystery"
     },
     {
+        "title": "Mathu Vadalara",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOWI1YzYyNzktM2UyZS00YzZlLTlmOTYtNTljOGM4NjI4MjBjXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg",
+        "hoverPoster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00121183-zkbvfnqdve-landscape.jpg",
+        "link": "https://drive.google.com/file/d/1Em1HCZeV4TS6LIUfpXAzRb-xIH82TGLq/preview",
+        "cast": {
+            "hero": "Sri Simha,Satya",
+            "heroine": "",
+            "director": "Ritesh Rana"
+        },
+        "genre": "Thriller,Comedy"
+    },
+    {
         "title": "Mathu Vadalara 2",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZWRlYTUtNGY0Yy00NDNjLThlNzQtY2M1NDNiOWM5MWJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "hoverPoster": "https://pbs.twimg.com/media/GfZh03XaoAABwki?format=jpg&name=small",
@@ -717,6 +729,18 @@
             "director": "S. S. Rajamouli"
         },
         "genre": " Action,Comedy "
+    },
+    {
+        "title": "Saripodhaa Sanivaaram",
+        "poster": "https://preview.redd.it/saripodhaa-sanivaaram-2024-review-discussion-thread-v0-bq0vdfja2hid1.jpg?width=3072&format=pjpg&auto=webp&s=93076420df465df600520aaddb3a3a1f25702982",
+        "hoverPoster": "https://www.tv5news.in/h-upload/2024/08/29/1345340-nani.webp",
+        "link": "https://drive.google.com/file/d/1L2uLm3FzYPSpfW3aESI_O0wHKA3LNHT6/preview",
+        "cast": {
+            "hero": "Nani,SJ Surya",
+            "heroine": "Priyanka Mohan",
+            "director": "Vivek Athreya"
+        },
+        "genre": " Action,Thriller"
     }
     
 ]
