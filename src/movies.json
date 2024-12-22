@@ -41,8 +41,8 @@
       },
       {
         "title": "Guntur Kaaram",
-        "poster": "https://static.qobuz.com/images/covers/fc/2b/d1zxokurb2bfc_600.jpg",
-        "hoverPoster": "https://gumlet.vikatan.com/vikatan/2024-01/f72b41ec-4f94-4195-858f-d467671efc97/guntur_kaaram__3_.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "poster": "https://pbs.twimg.com/media/GCQH01kbAAAKYis?format=jpg&name=large",
+        "hoverPoster": "https://pbs.twimg.com/media/GDVX12rXUAA2Ruy?format=jpg&name=large",
         "link": "https://drive.google.com/file/d/18K3Hs24z1ZyWPKZkf8SFoO0AmdKEqzDr/preview",
         "cast": { "hero": "Mahesh Babu", "heroine": "Sreeleela", "director": "Trivikram" },
         "genre": "Drama"
@@ -131,6 +131,18 @@
         },
         "genre": "Family, Adventure",
         "category": "Telugu Dubbed"
+    },{
+        "title": "Stree 2",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZTEyYzVjYjEtNWYzZi00NWRhLTgyZjUtNDlkZjBiNWIxYTEwXkEyXkFqcGc@.V1.jpg",
+        "hoverPoster": "https://i.ytimg.com/vi/bNalbPmLJu8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDKPkMF9dz2JQ6eiGetBjs-HgwKHA",
+        "link": "https://drive.google.com/file/d/1iu241_8QPDbnrIpV3oznJ-nzQzzRj_z0/preview",
+        "cast": {
+            "hero": "Rajkummar Rao",
+            "heroine": "Shraddha Kapoor",
+            "director": "Amar Kaushik"
+        },
+        "genre": "Horror,Comedy",
+         "category": "Hindi Version"
     },
 
     {
@@ -249,8 +261,19 @@
         "cast": {"hero": "Prabhas", "heroine": "Anushka", "director": "SS Rajamouli" },
         "genre": "periodic drama"
       },
-      
       {
+        "title": "Baahubali 2: The Conclusion",
+        "poster": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgytn171u6qR_CxZPbQ4GRfIgu2ffM5Ya3ghiX8AlERDuyo27yvQue9aSK2Au9VOCgZUJj8Ovw2ZtmxaqEPbQlV-lYdlwDIpYVeDw92zmP9cqTJZdtOHzgGufs7-Qcd_eq6arheg5oTkK0/s1600/Baahubali-The-Conclusion-First-Look-Poster-1.jpg",
+        "hoverPoster": "https://stat4.bollywoodhungama.in/wp-content/uploads/2016/03/Baahubali-2-The-Conclusion-2.jpg",
+        "link": "https://drive.google.com/file/d/1mg8XohJ2ZSyvGDe2f07-JE0tTrjwymjX/preview",
+        "cast": {
+            "hero": "Prabhas",
+            "heroine": "Anushka Shetty",
+            "director": "S. S. Rajamouli"
+        },
+        "genre": "Fantasy ,Action"
+    },    
+    {
         "title": "Brindavanam",
         "poster": "https://m.media-amazon.com/images/S/pv-target-images/785dfbfdbcbd37306af753a7b128f7581e9e8f685b826418902f86595625a206.jpg",
         "hoverPoster": "https://m.media-amazon.com/images/S/pv-target-images/033d89b3ed1e83c6acf7d972c8af38cb6e84b2a0622a76cbd716acf54dd377bd.jpg",
@@ -646,6 +669,54 @@
             "director": "Parasuram"
         },
         "genre": "Romance,Comedy"
+    },
+    {
+        "title": "Lucky Baskhar",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://www.bizzbuzz.news/h-upload/2024/11/14/1943306-lucky-bhaskar-censor-done-positive-inside-buzz-ahead-of-release-2.webp",
+        "link": "https://drive.google.com/file/d/1qR5HfFEKT5voATQE_6g-GJ_TdHYEXnzG/preview",
+        "cast": {
+            "hero": "Dulquer Salmaan",
+            "heroine": "Meenakshi Chaudhary",
+            "director": "Venky Atluri"
+        },
+        "genre": "Drama, Thriller, Mystery"
+    },
+    {
+        "title": "Mathu Vadalara 2",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZWRlYTUtNGY0Yy00NDNjLThlNzQtY2M1NDNiOWM5MWJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "hoverPoster": "https://pbs.twimg.com/media/GfZh03XaoAABwki?format=jpg&name=small",
+        "link": "https://drive.google.com/file/d/1OFGCcz4R_HMjGxfMSEFw4a1bzcyAxDGY/preview",
+        "cast": {
+            "hero": "Sri Simha Koduri, Satya",
+            "heroine": "Faria Abdullah",
+            "director": "Ritesh Rana"
+        },
+        "genre": "Drama, Thriller, Comedy"
+    },
+    {
+        "title": "Satyam Sundaram",
+        "poster": "https://www.cinejosh.com/reviewsimg/big/satyam-sundaram-review_b_2809241252.jpg",
+        "hoverPoster": "https://www.telugubulletin.com/wp-content/uploads/2024/09/Satyam-Sundram-Review.jpg",
+        "link": "https://drive.google.com/file/d/1f7v014Yzxu99OjTDvyJ3yRJWYxogPyD7/preview",
+        "cast": {
+            "hero": "Karthi, Arvind Swamy",
+            "heroine": "Sri Divya",
+            "director": "C. Prem Kumar"
+        },
+        "genre": "Family, Drama"
+    },
+    {
+        "title": "Vikramarkudu",
+        "poster": "https://vintagestore.in/cdn/shop/files/IMG_E8660_629d05db-7a86-461f-b570-bb3c01dc11b1_1024x1024@2x.jpg?v=1717186039",
+        "hoverPoster": "https://www.idlebrain.com/images2/wp-14vikramarkudu1024.jpg",
+        "link": "https://drive.google.com/file/d/1n2GqLGkTkLdMokFRmsF9QvWFIIPY4ou8/preview",
+        "cast": {
+            "hero": "Ravi Teja",
+            "heroine": "Anushka Shetty",
+            "director": "S. S. Rajamouli"
+        },
+        "genre": " Action,Comedy "
     }
     
 ]

@@ -58,6 +58,11 @@ const Home = () => {
       type: "movie",
     }, 
     {
+      title: `Hindi (${movies.filter((movie) => movie.category === "Hindi Version").length})`,
+      items: movies.filter((movie) => movie.category === "Hindi Version"),
+      type: "movie",
+    }, 
+    {
       title: `All Movies (${movies.length})`,
       items: movies,
       type: "movie",
