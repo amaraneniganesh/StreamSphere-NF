@@ -46,7 +46,6 @@ const Home = () => {
   };
 
   const movieSections = [
-    
     {
       title: `Mahesh Babu Movies (${movies.filter((movie) => movie.cast.hero === "Mahesh Babu").length})`,
       items: movies.filter((movie) => movie.cast.hero === "Mahesh Babu"),
@@ -67,7 +66,6 @@ const Home = () => {
       items: movies,
       type: "movie",
     },
-    
   ];
 
   const seriesSection = {
@@ -78,6 +76,24 @@ const Home = () => {
 
   return (
     <div>
+      <style>
+        {`
+          .marquee {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          .marquee-green {
+            color: green;
+          }
+          .marquee-red {
+            color: red;
+          }
+        `}
+      </style>
+      <marquee className="marquee marquee-green">Upcoming Movies: Stay Tuned for Exciting Releases!</marquee>
+      <marquee className="marquee marquee-red">For copyright concerns, please email us at: moviezvibe01@gmail.com.</marquee>
+
       {movieSections.map((section) => (
         <div key={section.title}>
           <h2>{section.title}</h2>

@@ -970,5 +970,29 @@
             "director": "Cibi Chakaravarthi"
         },
         "genre": "Comedy,Action"
+    },
+    {
+        "title": "Miss Shetty Mr Polishetty",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZWYyOWMzYjYtZjIzMi00MmI1LWFlMjItYTRhZDZjMzEzNDljXkEyXkFqcGc@.V1.jpg",
+        "hoverPoster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00353997-hcpqmmsbzk-landscape.jpg",
+        "link": "https://drive.google.com/file/d/1Ix2m3dd1u0o-Qd3V7S_I6dakP9ILfUH4/preview",
+        "cast": {
+            "hero": "Naveen Polishetty",
+            "heroine": "Anushka Shetty",
+            "director": "Mahesh Babu"
+        },
+        "genre": "Comedy,Romance"
+    },
+    {
+        "title": "Dasara",
+        "poster": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/dasara-et00316318-1679638362.jpg",
+        "hoverPoster": "https://www.koimoi.com/wp-content/new-galleries/2023/03/dasara-movie-review-002.jpg",
+        "link": "https://drive.google.com/file/d/18iXX6Zu9pD56klDkNQpNFKi9bk1r1L7P/preview",
+        "cast": {
+            "hero": "Nani",
+            "heroine": "Keerthy Suresh",
+            "director": "Srikanth Odela"
+        },
+        "genre": "Action,Thriller"
     }  
 ]
