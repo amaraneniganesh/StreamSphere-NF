@@ -91,7 +91,7 @@ const Home = () => {
           }
         `}
       </style>
-      <marquee className="marquee marquee-green">Upcoming Movies: Stay Tuned for Exciting Releases!</marquee>
+      <marquee className="marquee marquee-green">Upcoming Movies: The wild Robot and ...  Stay Tuned for Exciting Releases!</marquee>
       <marquee className="marquee marquee-red">For copyright concerns, please email us at: moviezvibe01@gmail.com.</marquee>
 
       {movieSections.map((section) => (
