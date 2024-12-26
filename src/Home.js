@@ -7,9 +7,10 @@ import series from "./Series.json";
 const Home = () => {
   const navigate = useNavigate();
   const [seriesData, setSeriesData] = useState([]);
+  const [showMarquee, setShowMarquee] = useState(true);
 
   useEffect(() => {
-    document.body.classList.add('dark-mode');
+    document.body.classList.add("dark-mode");
     setSeriesData(series);
   }, []);
 
@@ -55,12 +56,12 @@ const Home = () => {
       title: `Telugu Dubbed / Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
       items: movies.filter((movie) => movie.category === "Telugu Dubbed"),
       type: "movie",
-    }, 
+    },
     {
       title: `Hindi (${movies.filter((movie) => movie.category === "Hindi Version").length})`,
       items: movies.filter((movie) => movie.category === "Hindi Version"),
       type: "movie",
-    }, 
+    },
     {
       title: `All Movies (${movies.length})`,
       items: movies,
@@ -78,21 +79,65 @@ const Home = () => {
     <div>
       <style>
         {`
-          .marquee {
-            font-size: 18px;
-            font-weight: bold;
+          .marquee-container {
+            position: relative;
+            background-color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
             margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
           }
-          .marquee-green {
-            color: green;
-          }
-          .marquee-red {
+          .marquee {
+            font-size: 16px;
+            font-weight: bold;
             color: red;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+          }
+            .marquee1 {
+            font-size: 16px;
+            font-weight: bold;
+            color: green;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+          }
+          .close-button {
+            background-color: transparent;
+            border: none;
+            font-size: 24px; /* Medium-sized X */
+            font-weight: bold;
+            color: red;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+          }
+          .close-button:hover {
+            color: #ffcccc;
+            transform: scale(1.1); /* Slight scaling effect */
           }
         `}
       </style>
-      <marquee className="marquee marquee-green">Upcoming Movies: The wild Robot and ...  Stay Tuned for Exciting Releases!</marquee>
-      <marquee className="marquee marquee-red">For copyright concerns, please email us at: moviezvibe01@gmail.com.</marquee>
+
+      {showMarquee && (
+  <div className="marquee-container">
+    <marquee className="marquee">
+      For copyright concerns, please email us at: 
+      <a href="mailto:moviezvibe01@gmail.com" style={{ color: 'red', textDecoration: 'none' }}>
+        moviezvibe01@gmail.com
+      </a>
+      . &nbsp;|&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
+      &nbsp;&nbsp;&nbsp;
+      <span className="marquee1">Upcoming Movies: Stay tuned for new releases...</span>
+    </marquee>
+    <button className="close-button" onClick={() => setShowMarquee(false)}>
+      &times;
+    </button>
+  </div>
+)}
+
 
       {movieSections.map((section) => (
         <div key={section.title}>
