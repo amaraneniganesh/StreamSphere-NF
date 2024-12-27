@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 import movies from "./movies.json";
 import series from "./Series.json";
+import imageSrc from "./image.png"; // Importing the image
 
 const Home = () => {
   const navigate = useNavigate();
   const [seriesData, setSeriesData] = useState([]);
+  const [showPopup, setShowPopup] = useState(true);
   const [showMarquee, setShowMarquee] = useState(true);
 
   useEffect(() => {
@@ -77,70 +79,51 @@ const Home = () => {
 
   return (
     <div>
-      <style>
-        {`
-          .marquee-container {
-            position: relative;
-            background-color: black;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          }
-          .marquee {
-            font-size: 16px;
-            font-weight: bold;
-            color: red;
-            margin: 0;
-            flex-grow: 1;
-            text-align: center;
-          }
-            .marquee1 {
-            font-size: 16px;
-            font-weight: bold;
-            color: silver;
-            margin: 0;
-            flex-grow: 1;
-            text-align: center;
-          }
-          .close-button {
-            background-color: transparent;
-            border: none;
-            font-size: 24px; /* Medium-sized X */
-            font-weight: bold;
-            color: red;
-            cursor: pointer;
-            transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-          }
-          .close-button:hover {
-            color: #ffcccc;
-            transform: scale(1.1); /* Slight scaling effect */
-          }
-        `}
-      </style>
-
       {showMarquee && (
-  <div className="marquee-container">
-    <marquee className="marquee">
-      <span className="marquee1">Welcome to StreamSphere! Latest Releases: Waltair Veerayya and Squid Game Season 2...</span>
-      &nbsp;&nbsp;&nbsp;
-      For copyright concerns, please email us at: 
-      <a href="mailto:moviezvibe01@gmail.com" style={{ color: 'red', textDecoration: 'none' }}>
-        moviezvibe01@gmail.com
-      </a>
-      . &nbsp;&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
-      
-    </marquee>
-    <button className="close-button" onClick={() => setShowMarquee(false)}>
-      &times;
-    </button>
-  </div>
-)}
+        <div className="marquee-container">
+          <marquee className="marquee">
+            <span className="marquee1">
+              Welcome to StreamSphere! Latest Releases: Waltair Veerayya and Squid Game Season 2...
+            </span>
+            &nbsp;&nbsp;&nbsp; For copyright concerns, please email us at:{" "}
+            <a
+              href="mailto:moviezvibe01@gmail.com"
+              style={{ color: "red", textDecoration: "none" }}
+            >
+              moviezvibe01@gmail.com
+            </a>{" "}
+            . &nbsp;&nbsp; This application is created for educational purposes only and is
+            non-profitable and non-commercial.
+          </marquee>
+          <button className="close-button" onClick={() => setShowMarquee(false)}>
+            &times;
+          </button>
+        </div>
+      )}
 
-
-
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup">
+            <button className="popup-close" onClick={() => setShowPopup(false)}>
+              &times;
+            </button>
+            <img src={imageSrc} alt="Copyright Notice" className="popup-image" />
+            <p style={{ color: "red" }}>
+              For copyright concerns, please email us at:{" "}
+              <a
+                href="mailto:moviezvibe01@gmail.com"
+                style={{ color: "red", textDecoration: "underline" }}
+              >
+                moviezvibe01@gmail.com
+              </a>
+            </p>
+            <p style={{ color: "red" }}>
+              This application is created for educational purposes only and is non-profitable and
+              non-commercial.
+            </p>
+          </div>
+        </div>
+      )}
 
       {movieSections.map((section) => (
         <div key={section.title}>
