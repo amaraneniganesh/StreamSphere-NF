@@ -100,7 +100,7 @@ const Home = () => {
             .marquee1 {
             font-size: 16px;
             font-weight: bold;
-            color: green;
+            color: silver;
             margin: 0;
             flex-grow: 1;
             text-align: center;
@@ -124,19 +124,22 @@ const Home = () => {
       {showMarquee && (
   <div className="marquee-container">
     <marquee className="marquee">
+      <span className="marquee1">Welcome to StreamSphere! Latest Releases: Waltair Veerayya and Squid Game Season 2...</span>
+      &nbsp;&nbsp;&nbsp;
       For copyright concerns, please email us at: 
       <a href="mailto:moviezvibe01@gmail.com" style={{ color: 'red', textDecoration: 'none' }}>
         moviezvibe01@gmail.com
       </a>
       . &nbsp;|&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
-      &nbsp;&nbsp;&nbsp;
-      <span className="marquee1">Upcoming Movies: Stay tuned for new releases...</span>
+      
     </marquee>
     <button className="close-button" onClick={() => setShowMarquee(false)}>
       &times;
     </button>
   </div>
 )}
+
+
 
 
       {movieSections.map((section) => (
