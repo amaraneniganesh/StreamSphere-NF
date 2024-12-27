@@ -130,7 +130,7 @@ const Home = () => {
       <a href="mailto:moviezvibe01@gmail.com" style={{ color: 'red', textDecoration: 'none' }}>
         moviezvibe01@gmail.com
       </a>
-      . &nbsp;|&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
+      . &nbsp;&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
       
     </marquee>
     <button className="close-button" onClick={() => setShowMarquee(false)}>
