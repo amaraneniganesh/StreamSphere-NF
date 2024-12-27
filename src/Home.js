@@ -130,7 +130,7 @@ const Home = () => {
       </a>
       . &nbsp;|&nbsp; This application is created for educational purposes only and is non-profitable and non-commercial. 
       &nbsp;&nbsp;&nbsp;
-      <span className="marquee1">Upcoming Movies: Stay tuned for new releases...</span>
+      <span className="marquee1">Latest Releases: Waltair veerayya, Squid Game season 2 ...</span>
     </marquee>
     <button className="close-button" onClick={() => setShowMarquee(false)}>
       &times;
