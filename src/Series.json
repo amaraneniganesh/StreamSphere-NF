@@ -49,6 +49,25 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Squid Game",
+      "poster": "https://rukminim2.flixcart.com/image/850/1000/xif0q/movie/o/2/h/2021-dvd-fron-tech-hindi-squid-game-season-1-hindi-hollywood-original-imagtefgqz8qh775.jpeg?q=90&crop=false",
+      "hoverPoster": "https://resizing.flixster.com/f_K-etOQjgUV_dE5IIiIcxA1lRg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p20492187_b_h10_ag.jpg",
+      "seasons": [
+        {
+          "season": 2,
+          "episodes": [
+            { "episode": 1, "title": "Bread and Lottery", "link": "https://iplayerhls.com/e/44cn49tnczxi" },
+            { "episode": 2, "title": "Halloween Party", "link": "https://iplayerhls.com/e/xrv67gxipaxf" },
+            { "episode": 3, "title": "001", "link": "https://iplayerhls.com/e/px1llryasasc" },
+            { "episode": 4, "title": "Six Legs", "link": "https://iplayerhls.com/e/oomieead8jx2" },
+            { "episode": 5, "title": "One More Game", "link": "https://iplayerhls.com/e/xsitt8yx6zgs" },
+            { "episode": 6, "title": "O ﻿ X", "link": "https://iplayerhls.com/e/ewvo10wk6n93" },
+            { "episode": 7, "title": "Friend or Foe", "link": "https://iplayerhls.com/e/svhjtih1hghj" }
+          ]
+        }
+      ]
     }
   ]
   
