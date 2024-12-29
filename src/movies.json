@@ -861,6 +861,19 @@
          "category": "Telugu Dubbed"
     },
     {
+        "title": "Interstellar",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "hoverPoster": "https://www.hauweele.net/~gawen/blog/wp-content/uploads/2014/11/interstellar.jpg",
+        "link": "https://iplayerhls.com/e/sl9y4i7rmmwg",
+        "cast": {
+            "hero": "Matthew McConaughey",
+            "heroine": "Jessica Chastain",
+            "director": "Christopher Nolan"
+        },
+        "genre": "Sci-Fi, Adventure",
+         "category": "Telugu Dubbed"
+    },
+    {
         "title": "Maa Nanna Super Hero",
         "poster": "https://m.media-amazon.com/images/M/MV5BMzYxZjY5NmYtOTc1NC00ZmViLTlkMjEtNDM0OGU4YTg2MWRiXkEyXkFqcGc@._V1_.jpg",
         "hoverPoster": "https://i.ytimg.com/vi/bw0eox2JlpE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDIbZKBXlr89Q6m4gR_u7I38z9PiQ",
