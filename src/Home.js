@@ -14,7 +14,18 @@ const Home = () => {
   useEffect(() => {
     document.body.classList.add("dark-mode");
     setSeriesData(series);
+
+    // Check localStorage for popup status
+    const popupClosed = localStorage.getItem("popupClosed");
+    if (popupClosed === "true") {
+      setShowPopup(false);
+    }
   }, []);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    localStorage.setItem("popupClosed", "true"); // Save status in localStorage
+  };
 
   const handlePosterClick = (item, type) => {
     if (type === "movie") {
@@ -55,7 +66,7 @@ const Home = () => {
       type: "movie",
     },
     {
-      title: `Telugu Dubbed / Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
+      title: `Telugu Dubbed and Foreign Movies (${movies.filter((movie) => movie.category === "Telugu Dubbed").length})`,
       items: movies.filter((movie) => movie.category === "Telugu Dubbed"),
       type: "movie",
     },
@@ -104,7 +115,7 @@ const Home = () => {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup">
-            <button className="popup-close" onClick={() => setShowPopup(false)}>
+            <button className="popup-close" onClick={handleClosePopup}>
               &times;
             </button>
             <img src={imageSrc} alt="Copyright Notice" className="popup-image" />
