@@ -1,111 +1,126 @@
 /* Video Container with Glowing Border */
 .video-container1 {
-    position: relative;
-    width: 800px;
-    height: 450px;
-    margin: 20px auto;
-    border: 10px solid transparent;
-    border-radius: 15px;
-    padding: 10px;
-    background: #000;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-    z-index: 1; /* Ensure video container is above the glowing effect */
-  }
-  
-  /* Glowing Animated Border (Behind the Video) */
-  .video-container1.party-mode::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #ffff00);
-    background-size: 400% 400%;
-    border-radius: 15px;
-    animation: borderGlow 2s linear infinite; /* Animation only when party mode is active */
-    z-index: -1; /* Place the glowing border behind the video */
-  }
-  
-  @keyframes borderGlow {
-    0% {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  max-height: 80vh; /* Ensure it doesn't overflow on mobile */
+  margin: 20px auto;
+  border: 10px solid transparent;
+  border-radius: 15px;
+  padding: 10px;
+  background: #000;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  z-index: 1; /* Ensure video container is above the glowing effect */
+}
+
+.video-container1 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Glowing Animated Border (Behind the Video) */
+.video-container1.party-mode::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #ffff00);
+  background-size: 400% 400%;
+  border-radius: 15px;
+  animation: borderGlow 2s linear infinite; /* Animation only when party mode is active */
+  z-index: -1; /* Place the glowing border behind the video */
+}
+
+@keyframes borderGlow {
+  0% {
       background-position: 0% 50%;
-    }
-    50% {
+  }
+  50% {
       background-position: 100% 50%;
-    }
-    100% {
+  }
+  100% {
       background-position: 0% 50%;
-    }
   }
-  
+}
 
+/* Mobile responsive adjustments for video container */
+@media (max-width: 768px) {
+  .video-container1 {
+      width: 80%; /* Take up the full width of the screen */
+      height: 300px; /* Adjust height for smaller screens */
+  }
+}
 
-  
+/* Further adjustments for smaller screens (smartphones) */
+@media (max-width: 480px) {
+  .video-container1 {
+      width: 80; /* Full width */
+      height: 250px; /* Reduce height even further for smaller screens */
+  }
+}
 
-  
-  .dropdown-container {
-    margin: 15px 0;
-  }
-  
-  .dropdown-label {
-    font-size: 16px;
-    color: #fff;
-  }
-  
-  .dropdown-select {
-    padding: 8px;
-    font-size: 14px;
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 5px;
-  }
-  
-  .text {
-    margin: 0 1.5em
-  }
+/* Dropdowns */
+.dropdown-container {
+  margin: 15px 0;
+}
 
-  .party-button1 {
-    padding: 10px 15px; /* Smaller padding for a smaller button */
-    border: unset;
-    border-radius: 15px;
-    color: #e8e8e8;
-    background: #212121;
-    position: fixed; /* Fixed position to stay at the right */
-    bottom: 20px; /* Adjust this value to place it higher or lower on the screen */
-    right: 10px; /* Align to the right side */
-    font-weight: 1000;
-    font-size: 14px; /* Smaller font size */
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    z-index: 2; /* Ensure it's on top of other content */
-    
-  }
+.dropdown-label {
+  font-size: 16px;
+  color: #fff;
+}
 
-  
-  .party-button1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #e8e8e8;
-    z-index: -1;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    cursor: pointer;
-  }
-  
-  .party-button1:hover {
-    color: #212121;
-  }
-  
-  .party-button1:hover::before {
-    width: 100%;
-  }
-  
+.dropdown-select {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+/* Party Button */
+.party-button1 {
+  padding: 10px 15px; /* Smaller padding for a smaller button */
+  border: unset;
+  border-radius: 15px;
+  color: #e8e8e8;
+  background: #212121;
+  position: fixed; /* Fixed position to stay at the right */
+  bottom: 20px; /* Adjust this value to place it higher or lower on the screen */
+  right: 10px; /* Align to the right side */
+  font-weight: 1000;
+  font-size: 14px; /* Smaller font size */
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  z-index: 2; /* Ensure it's on top of other content */
+}
+
+.party-button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #e8e8e8;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.party-button1:hover {
+  color: #212121;
+}
+
+.party-button1:hover::before {
+  width: 100%;
+}
