@@ -468,6 +468,23 @@ body {
 
 /* Mobile Responsive for Player Container */
 @media (max-width: 768px) {
+  .movie-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two posters per row */
+    gap: 10px; /* Adjust spacing between items */
+    justify-items: center;
+    padding: 10px;
+  }
+
+  .movie-item {
+    width: 160px;
+  height: 250px;
+  }
+
+  .movie-item:hover {
+    width: 160px;
+    height: 260px;
+  }
   .player-container {
     padding: 10px;
     height: auto;
