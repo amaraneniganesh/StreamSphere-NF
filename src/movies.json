@@ -1064,5 +1064,28 @@
 
         "genre": "Comedy,Action"
 
+    },
+    {
+
+        "title": "Vidudala 2",
+
+        "poster": "https://assetscdn1.paytm.com/images/cinema/VIDUTHALAI-PART-608x800-2-48c92d60-6b59-11ef-93b2-a96b91e4a5b7.jpg",
+
+        "hoverPoster": "https://i.ytimg.com/vi/lglojaQlUVU/maxresdefault.jpg",
+
+        "link": "https://drive.google.com/file/d/1bsFfyjWCoDrj2JNxmzrQ1DX4yc7DgKA8/preview",
+
+        "cast": {
+
+            "hero": "Vijay Sethupathi, Soori",
+
+            "heroine": "Manju Warrier",
+
+            "director": "Vetrimaaran"
+
+        },
+
+        "genre": " Action,Drama"
+
     }
 ]
