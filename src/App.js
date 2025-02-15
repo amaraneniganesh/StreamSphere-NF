@@ -40,7 +40,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar onSearch={setSearchTerm} />
+      {/* <Navbar onSearch={setSearchTerm} /> */}
       <Routes>
         <Route path="/" element={<Home searchTerm={searchTerm} />} />
         <Route path="/search" element={<SearchResults searchTerm={searchTerm} />} />
