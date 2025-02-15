@@ -26,7 +26,7 @@ const SeriesPlayer = () => {
 
   return (
     <div className="series-container">
-      <button onClick={() => navigate("/")} className="back-button">
+      <button onClick={() => navigate("/")} className="back-buttona">
         Back to Home
       </button>
 

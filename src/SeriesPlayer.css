@@ -1,175 +1,167 @@
-/* Video Container with Glowing Border */
-.video-container1 {
-  position: relative;
-  width: 800px;
-  height: 450px;
+.series-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1200px;
   margin: 20px auto;
-  border: 10px solid transparent;
-  border-radius: 15px;
-  padding: 10px;
-  background: #000;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  z-index: 1; /* Ensure video container is above the glowing effect */
 }
 
-/* Glowing Animated Border (Behind the Video) */
-.video-container1.party-mode::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #ffff00);
-  background-size: 400% 400%;
-  border-radius: 15px;
-  animation: borderGlow 2s linear infinite; /* Animation only when party mode is active */
-  z-index: -1; /* Place the glowing border behind the video */
+.back-buttona {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes borderGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.back-buttona:hover {
+  background-color: #f40612; /* Brighter red on hover */
 }
 
+.series-header {
+  text-align: center;
+  margin: 20px 0;
+}
 
+.series-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #e50914; /* Netflix red */
+}
 
+.series-header h2 {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  color: #e5e5e5; /* Light gray for subtitles */
+}
 
-
-
+/* Dropdown Styles */
 .dropdown-container {
-  margin: 15px 0;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .dropdown-label {
-  font-size: 16px;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #e5e5e5; /* Light gray */
 }
 
 .dropdown-select {
-  padding: 8px;
-  font-size: 14px;
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #444;
+  padding: 10px;
   border-radius: 5px;
-}
-
-.text {
-  margin: 0 1.5em
-}
-
-.party-button1 {
-  padding: 10px 15px; /* Smaller padding for a smaller button */
-  border: unset;
-  border-radius: 15px;
-  color: #e8e8e8;
-  background: #212121;
-  position: fixed; /* Fixed position to stay at the right */
-  bottom: 20px; /* Adjust this value to place it higher or lower on the screen */
-  right: 10px; /* Align to the right side */
-  font-weight: 1000;
-  font-size: 14px; /* Smaller font size */
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
-  overflow: hidden;
-  z-index: 2; /* Ensure it's on top of other content */
-  
-}
-
-
-.party-button1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: #e8e8e8;
-  z-index: -1;
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
+  border: 2px solid #e50914; /* Netflix red */
+  background-color: #141414; /* Dark background */
+  color: #fff;
+  font-size: 1rem;
   cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-select:hover {
+  border-color: #f40612; /* Brighter red on hover */
+}
+
+/* Video Container Styles */
+.video-container1 {
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container1 iframe {
+  display: block;
+  border: none;
+}
+
+.video-container1.party-mode {
+  animation: partyAnimation 1s infinite alternate;
+}
+
+@keyframes partyAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.7); /* Netflix red glow */
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(229, 9, 20, 0.9); /* Stronger Netflix red glow */
+  }
+}
+
+/* Party Button Styles */
+.party-button1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .party-button1:hover {
-  color: #212121;
+  background-color: #f40612; /* Brighter red on hover */
+  transform: scale(1.1);
 }
 
-.party-button1:hover::before {
-  width: 100%;
-}
-
-
-/* Video Container for Mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .video-container1 {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    border: 5px solid transparent;
-    border-radius: 10px;
-    padding: 5px;
-    background: #000;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  .series-container {
+    padding: 10px;
+  }
+
+  .series-header h1 {
+    font-size: 2rem;
+  }
+
+  .series-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .dropdown-select {
+    font-size: 0.9rem;
   }
 
   .video-container1 iframe {
     width: 100%;
-    height: 200px;
-  }
-
-  .party-button1 {
-    padding: 8px 12px;
-    font-size: 12px;
-    bottom: 15px;
-    right: 8px;
-  }
-
-  .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px auto;
-    width: 90%;
-  }
-
-  .dropdown-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-
-  .dropdown-select {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 5px;
-  }
-
-  .series-header h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .series-header h2 {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .series-container {
-    padding: 10px;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }
 
+@media (max-width: 480px) {
+  .series-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .series-header h2 {
+    font-size: 1rem;
+  }
+
+  .dropdown-label {
+    font-size: 1rem;
+  }
+
+  .dropdown-select {
+    font-size: 0.8rem;
+  }
+
+  .party-button1 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

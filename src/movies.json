@@ -948,7 +948,7 @@
     
     {
         "title": "Premalu",
-        "poster": "https://english.idreampost.com/wp-content/uploads/2024/03/Premalu-Poste-image.jpg",
+        "poster": "https://www.businessoftollywood.com/wp-content/uploads/2024/03/Premalu-1-1.jpg",
         "hoverPoster": "https://cdn.gulte.com/wp-content/uploads/2024/03/premalu-1.jpg",
         "link": "https://drive.google.com/file/d/1t1lHWN2-Xdi39CBSIMs8S-qpE5DM3ED1/preview",
         "cast": {
@@ -1087,5 +1087,67 @@
 
         "genre": " Action,Drama"
 
+    },
+    {
+        "title": "Sookshmadarshini",
+        "poster": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrOZt5FVZC51keFRRUSzWGE5y1Rt.jpg",
+        "hoverPoster": "https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/8423/1736519778423-h",
+        "link": "https://drive.google.com/file/d/1LHj80P_ABQBQ4xHbrxTkJ4NsR3-eElIe/preview",
+        "cast": {
+            "hero": "Basil Joseph",
+            "heroine": "Nazriya",
+            "director": "M. C. Jithin"
+        },
+        "genre": "comedy,mystery"
+    },
+    {
+        "title": "Eega",
+        "poster": "https://upload.wikimedia.org/wikipedia/en/3/30/Eega_poster.jpg",
+        "hoverPoster": "https://static.moviecrow.com/gallery/20150730/68871-7bb06947b8bdb1ddd23f9aa90a72ace7.jpeg",
+        "link": "https://drive.google.com/file/d/1qTlh8anANNQlXAItD54g4H-cIpWhgse4/preview",
+        "cast": {
+            "hero": "Nani ",
+            "heroine": "Samantha",
+            "director": "SS Rajamouli"
+        },
+        "genre": "Action, Comedy"
+    },
+    {
+        "title": "Leader",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzYyMzZmY2EtY2Y5ZS00OTQ5LWFhZmUtZTljNDg5NDIzMjJjXkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://images.jdmagicbox.com/comp/jd_social/news/2018jul18/image-97424-3j7bmp71dw.jpg",
+        "link": "https://drive.google.com/file/d/1Td-a6C5QVOwGtp6zZ-h4f3ebIDEQfvGj/preview",
+        "cast": {
+            "hero": "Rana Daggubati ",
+            "heroine": "Richa Langella",
+            "director": "Sekhar Kammula"
+        },
+        "genre": "Drama, PoliticalDrama"
+    },
+    {
+        "title": "Yamadonga",
+        "poster": "https://static.toiimg.com/photo/61315915.cms",
+        "hoverPoster": "https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1433/1371433-i-f2e82bcbdca0",
+        "link": "https://drive.google.com/file/d/1f8BQB5YfiSMBSOoJnVUklUhZ5WumbsSd/preview",
+        "cast": {
+            "hero": "N. T. Rama Rao Jr",
+            "heroine": "Priyamani",
+            "director": "S. S. Rajamouli"
+        },
+        "genre": "Action,Comedy"
+    },
+    {
+        "title": "Leo",
+        "poster": "https://resizing.flixster.com/-BOvYVtW6LKWOdfbFz12hVdYzGk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RlNzVkZjM0LWRiZmEtNGE0YS1hYTUyLTU1YzlhYjQwMzViZi5qcGc=",
+        "hoverPoster": "https://pbs.twimg.com/media/GiXOOK8aoAABQnk?format=jpg&name=small",
+        "link": "https://drive.google.com/file/d/14C4U3pFFk4Ut9sRun3redX9sUhfSsyEN/preview",
+        "cast": {
+            "hero": "Thalapathy Vijay",
+            "heroine": "Thrisha",
+            "director": "Lokesh Kanagaraj"
+        },
+        "genre": "Action,Thriller"
     }
+    
+    
 ]

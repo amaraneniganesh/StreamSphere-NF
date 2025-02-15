@@ -1,425 +1,274 @@
-/* General Styles */
+/* Netflix-inspired styles */
+:root {
+  --netflix-red: #e50914;
+  --netflix-black: #141414;
+  --netflix-dark-gray: #181818;
+  --netflix-light-gray: #808080;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #000000;
-  color: #ffffff; /* Keep text color white by default */
+  background-color: var(--netflix-black);
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Movie Gallery */
-.movie-gallery {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 4%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  transition: background-color 0.3s;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.movie-item {
+.navbar.scrolled {
+  background-color: var(--netflix-black);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  color: var(--netflix-red);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--netflix-light-gray);
+}
+
+.search-container {
   position: relative;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s;
+}
+
+.search-input {
+  background-color: rgba(0,0,0,0.75);
+  border: 1px solid var(--netflix-light-gray);
+  color: white;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border-radius: 4px;
   width: 200px;
-  height: 300px; /* 2:3 aspect ratio */
-  overflow: hidden;
-  border-radius: 8px;
+  transition: width 0.3s;
 }
 
-.movie-item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.search-input:focus {
+  width: 300px;
+  outline: none;
+  border-color: white;
 }
 
-.movie-item .hover-image {
+.search-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 91%;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--netflix-light-gray);
+}
+
+.hero-section {
+  position: relative;
+  height: 80vh;
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 30%;
+  left: 4%;
+  max-width: 600px;
   z-index: 2;
 }
 
-.movie-item:hover img {
-  opacity: 0; /* Hide the original image */
-  transform: scale(1.05); /* Add subtle zoom effect */
-}
-
-.movie-item:hover .hover-image {
-  opacity: 1; /* Display the hover image */
-}
-
-.movie-item:hover {
-  width: 300px;  /* 3:2 aspect ratio */
-  height: 200px; /* 3:2 aspect ratio */
-}
-
-.movie-item .poster-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(128, 128, 128, 0.8); /* Grey background with slight transparency */
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 0;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  z-index: 3;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for better visibility */
-}
-
-/* Back to Home Button */
-.back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: inline-block;
-  cursor: pointer;
-  z-index: 15;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.back-button:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
-}
-
-.home-button {
-  position: fixed; /* Fixes the button to the viewport */
-  top: 20px;       /* Distance from the top */
-  left: 20px;      /* Distance from the left */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1000; /* Ensures it stays on top of other elements */
-  padding: 10px 20px;
-  background-color: #3498db; /* Primary blue color */
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: background-color 0.3s, transform 0.3s ease-in-out;
-}
-
-.home-button:hover {
-  background-color: #2980b9; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-.back-icon {
-  margin-right: 8px; /* Space between the arrow and text */
-  font-size: 18px; /* Slightly larger font for the arrow */
-}
-
-
-/* Player Container */
-.player-container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f9;
-  color: #2c3e50;
-}
-
-/* Party Button */
-.party-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #ff6347;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 15; /* Ensure it stays on top of everything */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.party-btn:hover {
-  background-color: #ff4500;
-  transform: scale(1.05);
-}
-
-/* Lights Off Mode */
-.lights-off {
-  background-color: black;
-  color: white; /* Keep text color white when in dark mode */
-  transition: background-color 0.5s ease;
-}
-
-/* Party Mode Effect (only around the video container) */
-.party-effect-wrapper {
-  position: relative;
-  display: inline-block; /* So that the rotating border affects only the video area */
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.party-effect {
+.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 8px;
-  border: 10px solid transparent;
-  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 400% 400%;
-  animation: party-animation 5s infinite linear;
+  background: linear-gradient(
+    to bottom,
+    rgba(20,20,20,0) 0%,
+    rgba(20,20,20,0.15) 15%,
+    rgba(20,20,20,0.35) 29%,
+    rgba(20,20,20,0.58) 44%,
+    rgba(20,20,20,0.8) 68%,
+    rgba(20,20,20,1) 100%
+  );
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-button {
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.play-button {
+  background-color: white;
+  color: var(--netflix-black);
+}
+
+.play-button:hover {
+  background-color: rgba(255,255,255,0.75);
+}
+
+.more-info-button {
+  background-color: rgba(109,109,110,0.7);
+  color: white;
+}
+
+.more-info-button:hover {
+  background-color: rgba(109,109,110,0.4);
+}
+
+.content-section {
+  padding: 0 4%;
+  margin-top: -100px;
+  position: relative;
+  z-index: 3;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.row {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-item {
+  flex: 0 0 auto;
+  width: 240px;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
   z-index: 2;
 }
 
-@keyframes party-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Video Container */
-.video-container {
-  text-align: center;
+.poster-wrapper {
   position: relative;
-  z-index: 1; /* Ensure it's above the party effect */
+  width: 100%;
+  height: 0;
+  padding-top: 150%;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.video-container h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: white; /* Text remains white */
-}
-
-.video-container iframe {
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2px 8px;
-  background-color: #2c3e50;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar-logo img {
-  width: 100px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.navbar-logo h2 {
-  font-size: 18px;
-  margin: 0;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
-.navbar-links a:hover {
-  color: #3498db;
-}
-
-/* Search Bar in Navbar */
-.navbar-search input {
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 12px;
-  outline: none;
-}
-
-.navbar-search input:focus {
-  outline: 2px solid #3498db;
-}
-
-
-
-/* CSS */
-.button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
-
-.button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-
-/* Dropdown container */
-.dropdown-container {
-  margin: 16px 0;
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-}
-
-/* Label for dropdowns */
-.dropdown-label {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #fff; /* Change to match your design theme */
-}
-
-/* Dropdown select box */
-.dropdown-select {
-  font-size: 14px;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #c1c2c5;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-
-.dropdown-select:hover {
-  border-color: #007bff;
-}
-
-.dropdown-select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-/* App.css */
-.series-container {
-  /* flex-direction: column; */
-  text-align: center;
-}
-
-.series-header {
-  margin-bottom: 20px;
-}
-
-/* Marquee Styles */
-.marquee-container {
-  position: relative;
-  background-color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.marquee {
-  font-size: 16px;
-  font-weight: bold;
-  color: red;
-  margin: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.marquee1 {
-  font-size: 16px;
-  font-weight: bold;
-  color: silver;
-  margin: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.close-button {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: red;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.close-button:hover {
-  color: #ffcccc;
-  transform: scale(1.1);
-}
-
-/* Popup Styles */
-.popup-overlay {
-  position: fixed;
+.poster-wrapper img {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+}
+
+.poster-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-item:hover .poster-overlay {
+  opacity: 1;
+}
+
+.poster-title {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,120 +276,57 @@ body {
 }
 
 .popup {
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: var(--netflix-dark-gray);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
   position: relative;
-  width: 80%;
-  max-width: 400px;
-}
-
-.popup-image {
-  width: 150px; /* Moderately sized image */
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 5px;
 }
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
+  top: 1rem;
+  right: 1rem;
+  background: none;
   border: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: red;
+  color: white;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s;
 }
 
-.popup-close:hover {
-  color: darkred;
+.logo-mobile {
+  display: none;
 }
 
-.popup p {
-  margin: 10px 0;
-  font-size: 16px;
+.logo-full {
+  display: block;
 }
 
-
-/* Mobile Responsive for Player Container */
+/* For smaller screens (mobile) */
 @media (max-width: 768px) {
-  .movie-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two posters per row */
-    gap: 10px; /* Adjust spacing between items */
-    justify-items: center;
-    padding: 10px;
+  .logo-mobile {
+    display: block;
   }
 
+  .logo-full {
+
+    display: none;
+  }
   .movie-item {
-    width: 160px;
-  height: 250px;
-  }
-
-  .movie-item:hover {
-    width: 160px;
-    height: 260px;
-  }
-  .player-container {
-    padding: 10px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .video-container iframe {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .back-button,
-  .party-btn {
-    position: static;
-    margin: 10px 0;
-    width: 90%;
-    text-align: center;
-  }
-
-  .button-62 {
-    margin: 10px 0;
-    width: 90%;
-    text-align: center;
-  }
-
-  .party-btn {
-    font-size: 14px;
-  }
-
-  .video-container h1 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .navbar-logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .navbar-logo h2 {
-    font-size: 16px;
-  }
-
-  .navbar-links a {
-    font-size: 12px;
-  }
-
-  .dropdown-container {
-    width: 100%;
-  }
-
-  .dropdown-select {
-    font-size: 12px;
-    width: 100%;
+    width: 120px;
   }
 }
+
+/* 
+@media (max-width: 480px) {
+  .hero-content {
+    left: 5%;
+    right: 5%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+
+} */
