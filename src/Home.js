@@ -7,6 +7,15 @@ import series from "./Series.json";
 
 const heroMovies = [
   {
+    "title": "Athadu",
+    "poster": "https://pbs.twimg.com/media/F3JiKseXkAA5WZR?format=jpg&name=large",
+    "description":"A professional killer is hired to fake the assassination of a politician. However, when the politician is killed and he is framed for his murder, he takes on a dead man's identity to escape the law.",
+    "hoverPoster": "https://pbs.twimg.com/media/FrvkgWjWcAAXr_I?format=jpg&name=large",
+    "link": "https://drive.google.com/file/d/1EX5fup4Jj8fOBlexMOHrLixvSZeHqW5V/preview",
+    "cast": { "hero": "Mahesh Babu", "heroine": "Thrisha", "director": "Trivikram" },
+    "genre": "Action, Drama, Mystery"
+  },
+  {
     "title": "Guntur Kaaram",
     "description":"Years after his mother abandons him and remarries, a man demands answers when he's asked to sign a document denying he is her son as she runs for office.",
     "poster": "https://wallpaperaccess.com/full/12061901.jpg",
@@ -98,6 +107,7 @@ const heroMovies = [
   },
   "genre": "Drama, Thriller, Mystery"
 },
+
 ];
 
 const Home = () => {
