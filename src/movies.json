@@ -1161,6 +1161,20 @@
         },
         "genre": "Action, Thriller"
     }
+    ,
+    {
+        "title": "Tenet",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTU0ZjZlYTUtYzIwMC00ZmQzLWEwZTAtZWFhMWIwYjMxY2I3XkEyXkFqcGc@._V1_.jpg",
+        "hoverPoster": "https://wallpapercave.com/wp/wp8512044.jpg",
+        "link": "https://ghbrisk.com/e/t2frzvt55hh0",
+        "cast": {
+            "hero": "John David Washington",
+            "heroine": "Elizabeth Debicki",
+            "director": "Christopher Nolan"
+        },
+        "genre": "Action, Thriller",
+        "category": "Telugu Dubbed"
+    }
     
     
 ]

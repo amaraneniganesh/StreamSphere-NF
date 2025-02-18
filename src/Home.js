@@ -107,6 +107,20 @@ const heroMovies = [
   },
   "genre": "Drama, Thriller, Mystery"
 },
+{
+    "title": "Tenet",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU0ZjZlYTUtYzIwMC00ZmQzLWEwZTAtZWFhMWIwYjMxY2I3XkEyXkFqcGc@._V1_.jpg",
+    "hoverPoster": "https://wallpapercave.com/wp/wp8512044.jpg",
+    "link": "https://ghbrisk.com/e/t2frzvt55hh0",
+    "description":"When a few objects that can be manipulated and used as weapons in the future fall into the wrong hands, a CIA operative, known as the Protagonist, must save the world.",
+    "cast": {
+        "hero": "John David Washington",
+        "heroine": "Elizabeth Debicki",
+        "director": "Christopher Nolan"
+    },
+    "genre": "Action, Thriller",
+    "category": "Telugu Dubbed"
+}
 
 ];
 
