@@ -80,32 +80,17 @@ const heroMovies = [
   "genre": "Romance, Drama, Family Entertainer"
 },
 {
-  "title": "The Dark Knight Rises",
-  "description":"Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
-  "poster": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg",
-  "hoverPoster": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/6ce5965d-cdb2-4f9c-b22b-ae7a091d95a8/8999b17e-4b13-4d1e-a9c0-3cbd50d803a7?host=wbd-images.prod-vod.h264.io&partner=beamcom",
-  "link": "https://iplayerhls.com/e/1fqp2kq52wcn",
+  "title": "Jersey",
+  "poster": "https://edgroom-blogs.s3.ap-south-1.amazonaws.com/202310082003498655315_61fdac34a3c1ec89cdd31a3c0347b7a8.jpg",
+  "description":"Arjun, a talented but failed cricketer, decides to return to cricket in his late thirties, driven by the desire to represent the Indian cricket team and fulfil his son's wish for a jersey as a gift.",
+  "hoverPoster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00077973-czartdwmyz-landscape.jpg",
+  "link": "https://drive.google.com/file/d/1GbtZwbu-PW52O-U9Bu2bkxB7TCXQfMn3/view",
   "cast": {
-      "hero": "Christian Bale",
-      "heroine": "Maggie Gyllenhaal",
-      "director": "Christopher Nolan"
+      "hero": "Nani",
+      "heroine": "Shraddha Srinath",
+      "director": "Gowtam Tinnanuri"
   },
-  "genre": "Action/Thriller",
-  "category": "Telugu Dubbed"
-},
-
-{
-  "title": "Lucky Baskhar",
-  "poster": "https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg",
-  "description":"A cash-strapped cashier working at a bank embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering.",
-  "hoverPoster": "https://www.bizzbuzz.news/h-upload/2024/11/14/1943306-lucky-bhaskar-censor-done-positive-inside-buzz-ahead-of-release-2.webp",
-  "link": "https://drive.google.com/file/d/1qR5HfFEKT5voATQE_6g-GJ_TdHYEXnzG/preview",
-  "cast": {
-      "hero": "Dulquer Salmaan",
-      "heroine": "Meenakshi Chaudhary",
-      "director": "Venky Atluri"
-  },
-  "genre": "Drama, Thriller, Mystery"
+  "genre": "Sport, Drama"
 },
 {
     "title": "Tenet",
@@ -120,7 +105,8 @@ const heroMovies = [
     },
     "genre": "Action, Thriller",
     "category": "Telugu Dubbed"
-}
+},
+
 
 ];
 

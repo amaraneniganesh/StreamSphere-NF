@@ -1174,6 +1174,18 @@
         },
         "genre": "Action, Thriller",
         "category": "Telugu Dubbed"
+    },
+    {
+        "title": "Jersey",
+        "poster": "https://edgroom-blogs.s3.ap-south-1.amazonaws.com/202310082003498655315_61fdac34a3c1ec89cdd31a3c0347b7a8.jpg",
+        "hoverPoster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00077973-czartdwmyz-landscape.jpg",
+        "link": "https://drive.google.com/file/d/1GbtZwbu-PW52O-U9Bu2bkxB7TCXQfMn3/view",
+        "cast": {
+            "hero": "Nani",
+            "heroine": "Shraddha Srinath",
+            "director": "Gowtam Tinnanuri"
+        },
+        "genre": "Sport, Drama"
     }
     
     
