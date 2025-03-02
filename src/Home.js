@@ -106,6 +106,19 @@ const heroMovies = [
     "genre": "Action, Thriller",
     "category": "Telugu Dubbed"
 },
+{
+  "title": "Sankranthiki Vasthunam",
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2NiMzA5MjctZTJjNC00ZWRmLTgzMTctODdhYzFmN2VlY2FhXkEyXkFqcGc@._V1_.jpg",
+  "hoverPoster": "https://www.shmoti.com/ImageFiles/Image_555x271/20250107_Banner_SankrathikiVastunamaS2E20250107.jpg",
+  "link": "https://drive.google.com/file/d/1GbtZwbu-PW52O-U9Bu2bkxB7TCXQfMn3/view",
+  "description":"When a renowned tech entrepreneur is kidnapped upon returning to India, a police officer recruits her ex-boyfriend, a former cop now living a quiet family life, to assist in the rescue mission.",
+  "cast": {
+      "hero": "Venkatesh",
+      "heroine": "Aishwarya Rajesh, Meenakshi Chaudhary",
+      "director": "Anil Ravipudi"
+  },
+  "genre": " Comedy, Adventure"
+}
 
 
 ];
