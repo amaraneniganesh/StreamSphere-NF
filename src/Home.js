@@ -110,7 +110,7 @@ const heroMovies = [
   "title": "Sankranthiki Vasthunam",
   "poster": "https://m.media-amazon.com/images/M/MV5BM2NiMzA5MjctZTJjNC00ZWRmLTgzMTctODdhYzFmN2VlY2FhXkEyXkFqcGc@._V1_.jpg",
   "hoverPoster": "https://pbs.twimg.com/media/GgXORvlbcAAcFMF?format=jpg&name=900x900",
-  "link": "https://drive.google.com/file/d/1GbtZwbu-PW52O-U9Bu2bkxB7TCXQfMn3/view",
+  "link": "https://drive.google.com/file/d/1O55rjvqEzBvs9e0TMPSBnhkSWAP2_R_c/preview",
   "description":"When a renowned tech entrepreneur is kidnapped upon returning to India, a police officer recruits her ex-boyfriend, a former cop now living a quiet family life, to assist in the rescue mission.",
   "cast": {
       "hero": "Venkatesh",
