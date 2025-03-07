@@ -1222,6 +1222,18 @@
             "director": "Sukumar"
         },
         "genre": "Action , Thriller"
+    },
+    {
+        "title": "Manamey",
+        "poster": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/manamey-et00391258-1717671295.jpg",
+        "hoverPoster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQihAMR9ZGXlxQTMQtlWU8KnKBpvztwKd5biQ&s",
+        "link": "https://drive.google.com/file/d/1tefaV85WzVsNfc6n2KqUJLwj8R4q5uHR/preview",
+        "cast": {
+            "hero": "Sharwanand",
+            "heroine": "Krithi Shetty",
+            "director": "Sriram Adittya"
+        },
+        "genre": "romantic , comedy , drama"
     }
     
     

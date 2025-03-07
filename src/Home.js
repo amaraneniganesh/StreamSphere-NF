@@ -118,6 +118,19 @@ const heroMovies = [
       "director": "Anil Ravipudi"
   },
   "genre": " Comedy, Adventure"
+},
+{
+  "title": "Manamey",
+  "poster": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/manamey-et00391258-1717671295.jpg",
+  "hoverPoster": "https://internationalnewsandviews.com/wp-content/uploads/2025/03/Manamey.jpg",
+  "description":"A charismatic playboy takes an unexpected turn when a young boy enters his world. Initially causing chaos, the boy gradually becomes an integral part of his life.",
+  "link": "https://drive.google.com/file/d/1tefaV85WzVsNfc6n2KqUJLwj8R4q5uHR/preview",
+  "cast": {
+      "hero": "Sharwanand",
+      "heroine": "Krithi Shetty",
+      "director": "Sriram Adittya"
+  },
+  "genre": "romantic , comedy , drama"
 }
 
 
